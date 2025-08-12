@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Clash-Display-Bold";
+	src: url("/src/fonts/ClashDisplay-Bold.woff2") format("woff2"),
+            url("/src/fonts/ClashDisplay-Bold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Clash-Display-Regular";
+	src: url("/src/fonts/ClashDisplay-Regular.woff2") format("woff2"),
+            url("/src/fonts/ClashDisplay-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Clash-Display-Light";
+	src: url("/src/fonts/ClashDisplay-Light.woff2") format("woff2"),
+            url("/src/fonts/ClashDisplay-Light.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}

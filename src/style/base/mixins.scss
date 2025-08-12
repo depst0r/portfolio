@@ -1,0 +1,10 @@
+@use '/src/style/base/variables.scss'as *;
+
+@mixin title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    color: $white;
+}
