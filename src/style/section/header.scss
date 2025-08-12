@@ -1,1 +1,38 @@
-.header {}
+@use '/src/style/base/variables.scss'as *;
+
+.header {
+    &__menu {
+        &-lg {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding-top: 26px;
+    }
+
+    &__logo {
+        text-align: start !important;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &-links {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            order: 1;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+}
