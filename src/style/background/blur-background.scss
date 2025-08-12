@@ -1,0 +1,26 @@
+.circle {
+    position: absolute;
+    filter: blur(68.30000305175781px);
+    background: rgba(29, 29, 29, 0.17);
+    border-radius: 100%;
+    width: 140px;
+    height: 125px;
+    z-index: -9999;
+
+    &-red {
+        background-color: #ff5d20;
+        top: 150px;
+        left: 100px;
+    }
+
+    &-yellow {
+        background-color: #f4eb97;
+        left: -50px;
+        top: 80px;
+    }
+
+    &-blue {
+        background-color: #5b6cff;
+        left: 120px;
+    }
+}
