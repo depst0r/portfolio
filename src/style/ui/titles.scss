@@ -5,7 +5,7 @@
     @include title;
     font-family: "Clash-Display-Bold";
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     text-align: center;
     color: $white;
 }
@@ -38,4 +38,10 @@
     font-weight: 400;
     font-size: 25px;
     color: $white;
+}
+
+@media screen and (min-width: 768px) {
+    .title-h1 {
+        font-size: 56px;
+    }
 }

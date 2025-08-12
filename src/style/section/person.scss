@@ -1,0 +1,11 @@
+.person {
+    &__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__bg {
+        display: flex;
+        justify-content: center;
+    }
+}
