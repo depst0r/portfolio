@@ -1,0 +1,42 @@
+.marquee {
+    padding-top: 40px;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        background-color: #222;
+        color: #fff;
+        font-size: 14px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        height: 29px;
+        padding: 0 7px;
+        box-shadow: 0 0 11px 0 rgba(255, 255, 255, 0.15);
+        background: #1c1c1c;
+        transform: rotate(-3deg);
+    }
+
+    &__elements {
+        display: flex;
+        width: max-content;
+        animation: scroll-left 10s linear infinite;
+    }
+
+    &__element {
+        padding-right: 10px;
+    }
+}
+
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
