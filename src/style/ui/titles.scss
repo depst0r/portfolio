@@ -19,6 +19,16 @@
     color: $white;
 }
 
+.title-h4 {
+    @include title;
+    font-family: "Clash-Display-Regular";
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    text-transform: none;
+    color: $white;
+}
+
 .title-h5 {
     font-family: "Clash-Display-Bold";
     font-weight: 600;

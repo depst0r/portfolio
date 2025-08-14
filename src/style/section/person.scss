@@ -15,4 +15,18 @@
         display: flex;
         justify-content: center;
     }
+
+    .title-h1 {
+        position: relative;
+
+        &::before {
+            content: '';
+            background: url('/src/logo/I’m.png')no-repeat;
+            width: 43px;
+            height: 58px;
+            position: absolute;
+            bottom: 48px;
+            left: 41px;
+        }
+    }
 }
