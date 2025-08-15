@@ -1,4 +1,5 @@
 @use '/src/style/base/variables.scss'as *;
+@use '/src/style/animation/animation.scss';
 
 .header {
     &__menu {
@@ -18,6 +19,11 @@
 
     &__logo {
         text-align: start !important;
+        background: linear-gradient(45deg, #ff0066, #00ccff, #ffff66);
+        background-size: 600% 600%;
+        background-clip: text;
+        text-fill-color: transparent;
+        animation: gradientShift 10s ease infinite;
     }
 
     &__navigation {
@@ -33,6 +39,25 @@
             order: 1;
             justify-content: center;
             gap: 40px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        &__menu {
+            &-lg {
+                display: block;
+            }
+        }
+
+        &__logo {
+            font-size: 30px !important;
+        }
+
+        .title-h5 {
+            visibility: hidden;
         }
     }
 }

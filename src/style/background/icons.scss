@@ -10,6 +10,7 @@
 
         &-js {
             background: $js-icon no-repeat;
+            left: -257px;
         }
 
         &-css {
@@ -19,10 +20,14 @@
 
         &-html {
             background: $html-icon no-repeat;
+            top: 62px;
+            left: -72px;
         }
 
         &-github {
             background: $github-icon no-repeat;
+            left: -276px;
+            top: 59px;
         }
     }
 }

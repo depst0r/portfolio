@@ -30,3 +30,37 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .person {
+        &__wrapper {
+            flex-direction: row !important;
+            align-items: center;
+        }
+
+        &__bg {
+            .bg {
+                width: 530px;
+            }
+        }
+
+        &__text {
+            flex: 1 1 50%;
+            order: 1;
+        }
+
+        &__bg {
+            flex: 1 1 50%;
+            order: 2;
+        }
+    }
+
+    .title-h1 {
+        width: 97%;
+        text-align: justify !important;
+    }
+
+    .title-h4 {
+        text-align: justify !important;
+    }
+}

@@ -54,4 +54,18 @@
     .title-h1 {
         font-size: 56px;
     }
+
+    .title-h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .title-h1 {
+        font-size: 86px;
+    }
+
+    .title-h4 {
+        font-size: 34px;
+    }
 }
