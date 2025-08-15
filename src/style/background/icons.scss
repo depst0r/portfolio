@@ -1,0 +1,28 @@
+@use '/src/style/base/variables.scss'as *;
+
+.picture {
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+
+        &-js {
+            background: $js-icon no-repeat;
+        }
+
+        &-css {
+            background: $css-icon no-repeat;
+            left: -90px;
+        }
+
+        &-html {
+            background: $html-icon no-repeat;
+        }
+
+        &-github {
+            background: $github-icon no-repeat;
+        }
+    }
+}
