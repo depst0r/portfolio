@@ -1,6 +1,24 @@
 .about {
     padding-top: 40px;
 
+    &__memoji {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        // &::before {
+        //     content: '';
+        //     display: block;
+        //     background: url('/src/img/icon/program-lang/sm/icons8-javascript-48.png')no-repeat;
+        //     width: 100%;
+        //     height: 100%;
+        //     position: absolute;
+        //     z-index: 99999;
+        // }
+    }
+
+    &__face {}
+
     .link {
         font-size: 15px;
         text-align: center;
