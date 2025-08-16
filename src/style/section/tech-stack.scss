@@ -20,5 +20,18 @@
             height: 100%;
             object-fit: cover;
         }
+
+    }
+
+    &-button {
+        &-controls {
+            display: none;
+        }
+    }
+
+    &-pagination-bullet {
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        border-radius: 3px !important;
+        width: 20px !important;
     }
 }
