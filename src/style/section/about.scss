@@ -21,3 +21,62 @@
         margin-top: 24px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .about {
+        &__wrapper {
+            display: flex;
+        }
+
+        &__text {
+            flex: 1 1 50%;
+            order: 2;
+        }
+
+        &__memoji {
+            flex: 1 1 50%;
+            padding: 0;
+            order: 1;
+        }
+
+        .link {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .about {
+        &__memoji {
+            img {
+                width: 530px;
+                height: 530px;
+            }
+        }
+
+        .link {
+            font-size: 34px;
+        }
+
+        .circle {
+            width: 333px;
+            height: 333px;
+
+            &__wrapper {
+                left: -474px;
+            }
+        }
+
+        .picture {
+            left: 451px;
+
+            &__logo-css {
+                left: 166px;
+            }
+
+            &__logo-html {
+                left: 184px;
+            }
+        }
+    }
+}
