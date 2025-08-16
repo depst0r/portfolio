@@ -19,6 +19,18 @@
     color: $white;
 }
 
+.title-h3 {
+    @include title;
+    font-family: "Clash-Display-Bold";
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(167deg, #981c82 0%, #ed6d65 55.5%, #b07900 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .title-h4 {
     @include title;
     font-family: "Clash-Display-Regular";
