@@ -15,8 +15,8 @@ try {
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.swiper-button-left',
+            prevEl: '.swiper-button-right'
         },
         loop: true,
         spaceBetween: 10,

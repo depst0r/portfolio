@@ -35,3 +35,13 @@
         width: 20px !important;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .swiper {
+        &-button {
+            &-controls {
+                display: block;
+            }
+        }
+    }
+}
