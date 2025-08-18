@@ -5,6 +5,7 @@
 
     &-slide {
         text-align: center;
+        overflow: hidden;
         font-size: 18px;
         display: flex;
         justify-content: center;
@@ -33,6 +34,31 @@
         background-color: rgba(255, 255, 255, 0.4) !important;
         border-radius: 3px !important;
         width: 20px !important;
+    }
+
+    #html,
+    #css,
+    #js,
+    #react,
+    #vite {
+        white-space: pre;
+        text-align: justify;
+    }
+
+    #html {
+        color: rgba(255, 255, 255, 0.904);
+    }
+
+    #css {
+        color: rgba(0, 0, 255, 0.815)
+    }
+
+    #js {
+        color: rgb(248, 211, 1)
+    }
+
+    #react {
+        color: #006eff;
     }
 }
 
