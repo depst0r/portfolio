@@ -134,11 +134,60 @@ export default defineConfig({
     },
 `;
 
+const webpackCode = `
+module.exports = {
+  entry: './src/index.jsx',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },`;
+
+const sassCode = `
+  $primary-color: #2196F3;
+
+.button {
+  background-color: $primary-color;
+  padding: 10px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}`;
+
+const bootstrapCode = `
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">Левая колонка</div>
+    <div class="col-md-6">Правая колонка</div>
+  </div>
+</div>`;
+
+const gitCode = `
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/depst0r.git
+
+git push -u origin main`;
+
 const htmlSnippet = document.getElementById('html');
 const cssSnippet = document.getElementById('css');
 const jsSnippet = document.getElementById('js');
 const reactSnippet = document.getElementById('react');
 const viteSnippet = document.getElementById('vite');
+const webpackSnippet = document.getElementById('webpack');
+const sassSnippet = document.getElementById('sass');
+const bootstrapSnippet = document.getElementById('bootstrap');
+const gitSnippet = document.getElementById('git');
+
 
 
 startCodeTypewriter(htmlSnippet, htmlCode, {
@@ -170,6 +219,34 @@ startCodeTypewriter(reactSnippet, reactCode, {
 });
 
 startCodeTypewriter(viteSnippet, viteCode, {
+    typingSpeed: 50,
+    deletingSpeed: 30,
+    pauseDuration: 1500,
+    loop: true
+});
+
+startCodeTypewriter(webpackSnippet, webpackCode, {
+    typingSpeed: 50,
+    deletingSpeed: 30,
+    pauseDuration: 1500,
+    loop: true
+});
+
+startCodeTypewriter(sassSnippet, sassCode, {
+    typingSpeed: 50,
+    deletingSpeed: 30,
+    pauseDuration: 1500,
+    loop: true
+});
+
+startCodeTypewriter(bootstrapSnippet, bootstrapCode, {
+    typingSpeed: 50,
+    deletingSpeed: 30,
+    pauseDuration: 1500,
+    loop: true
+});
+
+startCodeTypewriter(gitSnippet, gitCode, {
     typingSpeed: 50,
     deletingSpeed: 30,
     pauseDuration: 1500,

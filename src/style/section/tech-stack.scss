@@ -40,9 +40,14 @@
     #css,
     #js,
     #react,
-    #vite {
+    #vite,
+    #webpack,
+    #sass,
+    #bootstrap,
+    #git {
         white-space: pre;
         text-align: justify;
+        padding: 0 20px;
     }
 
     #html {
@@ -50,15 +55,35 @@
     }
 
     #css {
-        color: rgba(0, 0, 255, 0.815)
+        color: rgba(0, 0, 255, 0.815);
     }
 
     #js {
-        color: rgb(248, 211, 1)
+        color: rgb(248, 211, 1);
     }
 
     #react {
         color: #006eff;
+    }
+
+    #vite {
+        color: rgb(216, 147, 207);
+    }
+
+    #webpack {
+        color: rgb(122, 115, 115);
+    }
+
+    #sass {
+        color: rgb(201, 48, 206);
+    }
+
+    #bootstrap {
+        color: rgb(31, 233, 240);
+    }
+
+    #git {
+        color: rgb(255, 81, 0);
     }
 }
 
