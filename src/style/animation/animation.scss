@@ -11,3 +11,13 @@
         background-position: 0% 50%;
     }
 }
+
+.logo-animation {
+    text-align: start !important;
+    background: linear-gradient(45deg, #ff0066, #00ccff, #ffff66);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 7s ease infinite;
+    cursor: default;
+}

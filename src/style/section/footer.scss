@@ -1,21 +1,18 @@
 .footer {
     padding-top: 50px;
-    position: relative;
 
     &__wrapper {
         backdrop-filter: blur(24.863452911376953px);
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0.55%, rgba(255, 255, 255, 0) 100%);
         padding: 25px;
         border-radius: 15px;
+        position: relative;
+        margin-top: 40px;
     }
 
     &__memoji {
-        position: relative;
-
-        &-img {
-            position: absolute;
-            left: 80%;
-        }
+        position: absolute;
+        top: -59%;
+        left: 62%;
     }
-
 }
