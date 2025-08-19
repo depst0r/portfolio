@@ -87,6 +87,21 @@
     }
 }
 
+
+@media screen and (min-width: 1200px) {
+    .swiper {
+        &-button-controls {
+            display: block;
+
+            img {
+                position: absolute;
+                z-index: 9999;
+                top: -10%;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .swiper {
         &-button {

@@ -1,5 +1,6 @@
 .footer {
     padding-top: 50px;
+    padding-bottom: 50px;
 
     &__wrapper {
         backdrop-filter: blur(24.863452911376953px);
@@ -7,12 +8,19 @@
         padding: 25px;
         border-radius: 15px;
         position: relative;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
-    &__memoji {
-        position: absolute;
-        top: -59%;
-        left: 62%;
+    &__my-contact {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // flex-wrap: wrap;
+
+            // li {
+            //     flex: 1 1 calc(50% - 50px);
+            // }
+        }
     }
 }
