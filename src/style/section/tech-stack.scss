@@ -96,7 +96,7 @@
             img {
                 position: absolute;
                 z-index: 9999;
-                top: -10%;
+                top: -62%;
             }
         }
     }
@@ -106,7 +106,22 @@
     .swiper {
         &-button {
             &-controls {
-                display: block;
+                display: flex;
+                position: absolute;
+                z-index: 99999;
+                width: 100px;
+                height: 100px;
+                align-items: center;
+                justify-content: space-between;
+                top: 300%;
+            }
+
+            &-rigth {
+                left: -65%;
+            }
+
+            &-left {
+                left: 70vw;
             }
         }
     }
