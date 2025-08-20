@@ -12,8 +12,8 @@
         font-size: 14px;
         white-space: nowrap;
         box-sizing: border-box;
-        height: 29px;
-        padding: 0 7px;
+        // height: 29px;
+        padding: 20px;
         box-shadow: 0 0 11px 0 rgba(255, 255, 255, 0.15);
         background: #1c1c1c;
         transform: rotate(-3deg);
@@ -23,20 +23,39 @@
         display: flex;
         width: max-content;
         animation: scroll-left 10s linear infinite;
+        gap: 5%;
     }
 
     &__element {
         padding-right: 10px;
     }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+
+        li {
+            background: linear-gradient(179deg, rgba(255, 255, 255, 0.11) 0%, rgba(58, 58, 58, 0.11) 100%);
+            border-radius: 17px;
+            padding: 11px;
+            border: 1px solid rgba(255, 255, 255, 0.445);
+        }
+    }
 }
 
-
-@keyframes scroll-left {
-    from {
-        transform: translateX(0);
+@media screen and (min-width: 768px) {
+    .marquee {
+        &__container {
+            font-size: 20px;
+        }
     }
+}
 
-    to {
-        transform: translateX(-50%);
+@media screen and (min-width: 1440px) {
+    .marquee {
+        &__container {
+            font-size: 30px;
+        }
     }
 }

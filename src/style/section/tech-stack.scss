@@ -96,7 +96,6 @@
             img {
                 position: absolute;
                 z-index: 9999;
-                top: -62%;
             }
         }
     }
@@ -118,10 +117,11 @@
 
             &-rigth {
                 left: -65%;
+                right: 73%;
             }
 
             &-left {
-                left: 70vw;
+                left: 71vw;
             }
         }
     }

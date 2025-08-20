@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body::selection {
+    background-color: rgba(132, 0, 255, 0.527);
+}
+
 h1,
 h2,
 h3,
@@ -54,6 +58,12 @@ h5 {
 img {
     display: block;
     max-inline-size: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+
 }
 
 body {

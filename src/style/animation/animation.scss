@@ -21,3 +21,13 @@
     animation: gradientShift 7s ease infinite;
     cursor: default;
 }
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
