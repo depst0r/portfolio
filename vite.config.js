@@ -6,6 +6,7 @@ import viteImagemin from 'vite-plugin-imagemin';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+    base: '/portfolio/',
     build: {
         rollupOptions: {
             input: {
