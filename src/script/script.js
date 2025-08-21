@@ -9,6 +9,8 @@ import 'swiper/css/pagination';
 import 'prismjs/themes/prism.css';
 import Prism from 'prismjs';
 
+import 'hover.css/css/hover.css';
+
 try {
     new Swiper('.mySwiper', {
         modules: [Navigation, Pagination],

@@ -19,9 +19,8 @@
     "vite-plugin-imagemin": "^0.6.1"
   },
   "dependencies": {
+    "hover.css": "^2.3.2",
     "prismjs": "^1.30.0",
     "swiper": "^11.2.10"
   }
 }
-
-
