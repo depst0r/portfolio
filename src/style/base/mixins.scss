@@ -1,21 +1,8 @@
 @use '/src/style/base/variables.scss'as *;
 
 @mixin title {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-style: normal;
-    line-height: normal;
-    text-align: center;
-    color: $white;
-}
-
-@mixin button {
-    width: 240px;
-    height: 77px;
-    font-family: "Clash-Display-Regular";
-    font-weight: 400;
-    padding: 5px;
-    font-size: 33px;
-    text-align: center;
-    color: $white;
+    font-family: "Jat-Brains-Mono-SB";
+    font-weight: normal;
+    font-size: normal;
+    color: $stroke-main;
 }

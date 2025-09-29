@@ -68,16 +68,15 @@ img {
 
 body {
     margin: 0 auto;
-    background-color: rgb(0, 0, 0);
+    background-color: #1B1B1B;
     max-width: 1440px;
 }
 
+.wrapper,
 .container {
-    padding: 0 23px;
-}
+    padding: 16px;
 
-.line {
-    height: 2px;
-    width: 50%;
-    background-color: rgba(157, 160, 157, 0.795);
+    &-border {
+        border: 2px solid $stroke-main;
+    }
 }
