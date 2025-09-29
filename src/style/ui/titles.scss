@@ -3,97 +3,13 @@
 
 .title-h1 {
     @include title;
-    font-family: "Clash-Display-Bold";
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    color: $white;
-}
-
-.title-h2 {
-    @include title;
-    font-family: "Clash-Display-Bold";
     font-weight: 600;
-    font-size: 25px;
-    text-align: center;
-    color: $white;
-}
-
-.title-h3 {
-    @include title;
-    font-family: "Clash-Display-Bold";
-    font-weight: 700;
-    font-size: 20px;
-    text-align: center;
-    background: linear-gradient(167deg, #981c82 0%, #ed6d65 55.5%, #b07900 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.title-h4 {
-    @include title;
-    font-family: "Clash-Display-Regular";
-    font-weight: 300;
-    font-size: 17px;
-    text-align: center;
-    text-transform: none;
-    color: $gray-light;
-}
-
-.title-h5 {
-    font-family: "Clash-Display-Bold";
-    font-weight: 600;
-    font-size: 14px;
-    color: $white;
-}
-
-.logo {
-    @include title;
-    font-family: "Clash-Display-Bold";
-    font-size: 14px;
+    font-size: 40px;
 }
 
 .link {
     @include title;
-    font-family: "Clash-Display-Light";
-    font-weight: 400;
-    font-size: 25px;
-    color: $white;
-}
-
-@media screen and (min-width: 768px) {
-    .title-h1 {
-        font-size: 56px;
-    }
-
-    .title-h4 {
-        font-size: 20px;
-    }
-
-    .logo {
-        font-size: 50px;
-    }
-
-    .title-h5 {
-        font-size: 30px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .title-h1 {
-        font-size: 86px;
-    }
-
-    .title-h2 {
-        font-size: 70px;
-    }
-
-    .title-h4 {
-        font-size: 34px;
-    }
-
-    .title-h5 {
-        font-size: 40px;
-    }
+    font-weight: 600;
+    font-size: 14px;
+    color: $text-link;
 }

@@ -1,23 +1,8 @@
-@use '/src/style/libs/clashDisplay.css';
-@use '/src/style/libs/reberoid.css';
+@use '/src/style//libs//jetBrainsMono.css';
 
 @use '/src/style/base/basic.scss';
 
 @use '/src/style/base/mixins.scss';
 @use '/src/style/base/variables.scss';
 
-@use '/src/style/section/header.scss';
-@use '/src/style/section/person.scss';
-@use '/src/style/section/marque.scss';
-@use '/src/style/section/about.scss';
-@use '/src/style/section/tech-stack.scss';
-@use '/src/style/section/burger.scss';
-@use '/src/style/section/footer.scss';
-@use '/src/style/section/projects.scss';
-
 @use '/src/style/ui/titles.scss';
-
-@use '/src/style/background/blur-background.scss';
-@use '/src/style/background/icons.scss';
-
-@use '/src/style/animation/animation.scss';
