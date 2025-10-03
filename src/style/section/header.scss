@@ -75,11 +75,13 @@
             width: 100%;
             top: -100px;
             padding: 0 10px;
-            transition: top 1s;
+            transition: all 1s;
+            opacity: 0;
 
             &--visible {
                 top: 50px;
-                transition: top 1s;
+                opacity: 1;
+                transition: all 1s;
             }
         }
     }
