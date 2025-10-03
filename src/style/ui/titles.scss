@@ -2,10 +2,9 @@
 @use '/src/style/base/variables.scss'as *;
 
 
-@mixin title {
-    font-weight: 600;
-    font-style: normal;
-    line-height: normal;
-    text-align: center;
-    color: $dark;
+.title-h1 {
+    @include title;
+    // font-size: 36px;
+    font-size: 18px;
+    text-align: left;
 }
