@@ -21,6 +21,18 @@
                 width: 20px;
                 height: 3px;
                 background-color: #2A7B9B;
+
+                &:nth-child(1) {
+                    width: 100%;
+                    transform: translateY(0px) rotate(0deg);
+                    transition: all 1s;
+                }
+
+                &:nth-child(3) {
+                    width: 100%;
+                    transform: translateY(0px) rotate(0deg);
+                    transition: all 1s;
+                }
             }
 
             &--active {
