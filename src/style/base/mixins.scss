@@ -1,8 +1,9 @@
 @use '/src/style/base/variables.scss'as *;
 
 @mixin title {
-    font-family: "Jat-Brains-Mono-SB";
-    font-weight: normal;
-    font-size: normal;
-    color: $stroke-main;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    color: $blue-text;
 }

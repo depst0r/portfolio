@@ -1,15 +1,16 @@
 @use '/src/style/base/mixins.scss'as *;
 @use '/src/style/base/variables.scss'as *;
 
+
 .title-h1 {
     @include title;
-    font-weight: 600;
-    font-size: 40px;
+    // font-size: 36px;
+    font-size: 18px;
+    text-align: left;
 }
+
 
 .link {
     @include title;
-    font-weight: 600;
-    font-size: 14px;
-    color: $text-link;
+    font-size: 16px;
 }
