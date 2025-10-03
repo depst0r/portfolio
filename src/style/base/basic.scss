@@ -67,16 +67,13 @@ img {
 }
 
 body {
+    font-family: 'Poppins',
+        sans-serif;
     margin: 0 auto;
-    background-color: #1B1B1B;
     max-width: 1440px;
+    background-color: rgba(127, 255, 212, 0.247);
 }
 
-.wrapper,
-.container {
-    padding: 16px;
-
-    &-border {
-        border: 2px solid $stroke-main;
-    }
+.wrapper {
+    background: url('/src/img/bg.png') no-repeat center / cover;
 }
