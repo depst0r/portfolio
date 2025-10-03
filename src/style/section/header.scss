@@ -55,4 +55,51 @@
             }
         }
     }
+
+    &__nav {
+        display: none;
+
+        &-sm {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.1),
+                    rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: fixed;
+            width: 100%;
+            top: -100px;
+            padding: 0 10px;
+            transition: top 1s;
+
+            &--visible {
+                top: 50px;
+                transition: top 1s;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+
+        &__nav {
+            display: block;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 47px;
+            }
+        }
+
+        .header__menu-gamburger {
+            display: none;
+        }
+    }
 }
