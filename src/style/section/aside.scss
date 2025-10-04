@@ -1,0 +1,42 @@
+@use '/src/style/base/variables.scss'as *;
+
+.aside {
+    border: 1px solid $gray;
+
+    &__wrapper {
+        display: grid;
+        padding: 50px;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        justify-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    &__img {
+        img {
+            border-radius: 100%;
+            width: 163px;
+        }
+    }
+
+    &__title {
+        background: linear-gradient(164deg, #5671a6 0%, #b2cad8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__contact {
+        ul {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 21px;
+            }
+        }
+    }
+}
