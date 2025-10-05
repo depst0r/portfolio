@@ -20,6 +20,9 @@
     color: #383838;
 }
 
+.text {
+    @include text;
+}
 
 .link {
     @include title;
