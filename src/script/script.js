@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const gamburger = document.querySelector('.header__menu-gamburger'),
         headerNavSm = document.querySelector('.header__nav-sm')
 
+
     const elemToggle = (el, selector) => {
         el.classList.toggle(selector)
     }
@@ -15,7 +16,11 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+
+
     hideShowMenu(gamburger)
+
+
 })
 
 
