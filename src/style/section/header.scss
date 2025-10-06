@@ -1,13 +1,36 @@
 @use '/src/style/base/variables.scss'as *;
 
 .header {
-    border: 1px solid $gray;
     padding: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__logo {
+        a {
+            .title-h1 {
+                font-size: 20px;
+                font-weight: 700;
+                background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin: 0;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    .title-h1 {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
     }
 
     &__menu {
@@ -20,7 +43,7 @@
             .line {
                 width: 20px;
                 height: 3px;
-                background-color: #2A7B9B;
+                background-color: white;
 
                 &:nth-child(1) {
                     width: 100%;
@@ -60,16 +83,14 @@
         display: none;
 
         &-sm {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(30px);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
             display: flex;
             position: absolute;
             flex-direction: column;
             text-align: center;
-            background: linear-gradient(135deg,
-                    rgba(255, 255, 255, 0.1),
-                    rgba(255, 255, 255, 0.05));
-            backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             width: 100%;
