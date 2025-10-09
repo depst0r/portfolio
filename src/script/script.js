@@ -19,24 +19,27 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    const test = () => {
+        btnContact.addEventListener('click', () => {
+            overlay.classList.add('form__modal-overlay--active')
+            document.body.classList.add('modal-open');
 
-    btnContact.addEventListener('click', () => {
-        overlay.classList.add('form__modal-overlay--active')
-        document.body.classList.add('modal-open');
+        })
 
-    })
+        closeBtnForm.addEventListener('click', () => {
+            overlay.classList.remove('form__modal-overlay--active')
+            document.body.classList.remove('modal-open');
+        })
+    }
 
-    closeBtnForm.addEventListener('click', () => {
-        overlay.classList.remove('form__modal-overlay--active')
-        document.body.classList.remove('modal-open');
-    })
 
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-    })
+
+    // form.addEventListener('submit', e => {
+    //     e.preventDefault()
+    // })
 
     hideShowMenu(gamburger)
-
+    test()
 })
 
 
