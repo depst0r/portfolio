@@ -5,8 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
         headerNavSm = document.querySelector('.header__nav-sm'),
         overlay = document.querySelector('.form__modal-overlay'),
         closeBtnForm = document.querySelector('.form__close-btn'),
-        btnContact = document.querySelector('.btn-contact'),
-        form = overlay.querySelector('#form__contact-me');
+        btnContact = document.querySelector('.btn-contact');
 
     const elemToggle = (el, selector) => {
         el.classList.toggle(selector)
@@ -32,16 +31,51 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-    })
+    const formPost = formId => {
+        const form = document.querySelector(formId);
+        form.addEventListener('submit', async e => {
+            e.preventDefault()
 
+            const submitBtn = form.querySelector('.form__submit-btn');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            try {
+                const formData = new FormData(form);
+
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    alert('Message sent successfully!');
+                    form.reset();
+                } else {
+                    alert('Error sending message');
+                }
+
+            } catch (error) {
+                alert('Network error');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        })
+    }
+
+
+
+
+
+
+
+
+    formPost('#form__contact-me')
     hideShowMenu(gamburger)
-
 })
-
-
-
-
-
-
