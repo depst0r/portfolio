@@ -9,6 +9,7 @@
     margin: 20px 0;
     transition: all 0.3s;
     height: 750px;
+
     &:hover {
         transform: translateY(-0.3125rem);
         box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.3);
@@ -49,19 +50,20 @@
             }
         }
     }
+
     .container {
         padding: 0;
     }
 
     button {
-    border-radius: 1.5625rem;
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease;
-    border: 0.0625rem solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.2);
-    transition: all 0.5s;
-    cursor: pointer;
+        border-radius: 1.5625rem;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s ease;
+        border: 0.0625rem solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.2);
+        transition: all 0.5s;
+        cursor: pointer;
 
         &:hover {
             background: rgba(255, 255, 255, 0.25);
@@ -70,4 +72,3 @@
 
     }
 }
-
