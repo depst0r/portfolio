@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
         overlay = document.querySelector('.form__modal-overlay'),
         closeBtnForm = document.querySelector('.form__close-btn'),
         btnContact = document.querySelector('.btn-contact'),
-        form = overlay.querySelector('#form__contact-me');
+        form = document.querySelector('#form__contact-me');
 
     const elemToggle = (el, selector) => {
         el.classList.toggle(selector)
@@ -30,7 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
         overlay.classList.remove('form__modal-overlay--active')
         document.body.classList.remove('modal-open');
     })
-
 
     form.addEventListener('submit', e => {
         e.preventDefault()

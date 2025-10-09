@@ -1,0 +1,1 @@
+@use '/src/style/base/basic.scss';@use '/src/style/base/mixins.scss';@use '/src/style/base/variables.scss';@use '/src/style/ui/titles.scss';@use '/src/style/ui/buttons.scss';@use '/src/style/section/header.scss';@use '/src/style/section/aside.scss';@use '/src/style/section/form.scss';@use '/src/style/pages/about.scss';@use '/src/style/section/main.scss'

@@ -72,6 +72,14 @@ body {
     margin: 0 auto;
     max-width: 1440px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: rgb(255, 255, 255);
+}
+
+.wrapper {
+    display: grid;
+    // grid-template-columns: 300px 1fr;
+
+    min-height: 100vh;
 }
 
 .modal-open {
@@ -118,6 +126,10 @@ body {
 @media screen and (min-width: 768px) {
     .container {
         padding: 0 30px;
+    }
+    .wrapper {
+        grid-template-columns: 300px 1fr;
+    
     }
 }
 
