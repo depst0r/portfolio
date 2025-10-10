@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
         headerNavSm = document.querySelector('.header__nav-sm'),
         overlay = document.querySelector('.form__modal-overlay'),
         closeBtnForm = document.querySelector('.form__close-btn'),
-        btnContact = document.querySelector('.btn-contact');
+        btnContact = document.querySelector('.btn-contact'),
+        close = document.querySelector('.form__cancel-btn');
 
     const elemToggle = (el, selector) => {
         el.classList.toggle(selector)
@@ -30,13 +31,18 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.remove('modal-open');
     })
 
+    close.addEventListener('click', () => {
+        overlay.classList.remove('form__modal-overlay--active')
+        document.body.classList.remove('modal-open');
+    })
 
-    const formPost = formId => {
+
+    const formPost = (formId, btn) => {
         const form = document.querySelector(formId);
         form.addEventListener('submit', async e => {
             e.preventDefault()
 
-            const submitBtn = form.querySelector('.form__submit-btn');
+            const submitBtn = form.querySelector(btn);
             const originalText = submitBtn.textContent;
 
             submitBtn.textContent = 'Sending...';
@@ -56,6 +62,11 @@ window.addEventListener('DOMContentLoaded', () => {
                 if (response.ok) {
                     alert('Message sent successfully!');
                     form.reset();
+
+                    setTimeout(() => {
+                        overlay.classList.remove('form__modal-overlay--active')
+                        document.body.classList.remove('modal-open');
+                    }, 2000)
                 } else {
                     alert('Error sending message');
                 }
@@ -70,12 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 
-
-
-
-
-
-
-    formPost('#form__contact-me')
+    formPost('#contact__form', '.contact__submit')
+    formPost('#form__contact-me', '.form__submit-btn')
     hideShowMenu(gamburger)
 })
