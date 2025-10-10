@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 } else {
                     alert('Error sending message');
                 }
-                //
+
             } catch (error) {
                 alert('Network error');
             } finally {
