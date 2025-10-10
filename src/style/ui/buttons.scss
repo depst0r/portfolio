@@ -1,8 +1,0 @@
-@use '/src/style/base/variables.scss'as *;
-@use '/src/style/base/mixins.scss'as *;
-
-.btn-primary {
-    @include button;
-    background: #5671a6;
-    border: none;
-}
