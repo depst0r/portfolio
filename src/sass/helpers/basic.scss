@@ -1,0 +1,22 @@
+@use '/src/sass/helpers/variables.scss' as*;
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::selection {
+    background-color: rgba(143, 236, 154, 0.527) !important;
+}
+
+* {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body {
+    background: $background;
+}
