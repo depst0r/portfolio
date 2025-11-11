@@ -87,7 +87,7 @@
         </div>
     </header>
     <main class="p-4">
-        <section class="user">
+        <section class="user md:p-4 flex flex-col items-center">
             <div class="flex flex-col gap-5">
                 <div>
                     <span class="code-text semibold text-white text-3xl">Depstor </span>
@@ -98,11 +98,20 @@
                     creativity</span>
             </div>
             <div>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="/src/images/lg/user.png">
-                    <img src="/src/images/mobile/user.png" alt="user" class="object-cover">
-                </picture>
-                <div class="flex items-center gap-2 border border-gray-400 p-2 max-w-80 max-h-[58px]">
+                <div class="relative">
+                    <picture class="absolute -left-4 -top-4 z-10">
+                        <img src="/src/images/img/Logo.png" alt="decoration" class="w-25 h-25 object-cover">
+                    </picture>
+                    <picture class="relative z-20">
+                        <source media="(min-width: 768px)" srcset="/src/images/lg/user.png">
+                        <img src="/src/images/mobile/user.png" alt="user" class="object-cover">
+                    </picture>
+                    <picture class="absolute -right-4 -bottom-4 z-20">
+                        <img src="/src/images/img/Dots.png" alt="decoration" class="w-14 h-14 object-cover">
+                    </picture>
+                </div>
+
+                <div class="flex items-center gap-2 border border-gray-400 p-3 max-w-80 max-h-[58px]">
                     <div class="border-2 border-[#c778dd] w-4 h-4 bg-[#c778dd] flex-shrink-0"></div>
                     <div>
                         <span class="code-text text-base text-[#abb2bf]">Currently working on</span>
