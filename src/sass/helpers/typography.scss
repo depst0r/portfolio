@@ -1,0 +1,17 @@
+@use '/src/sass/helpers/variables.scss' as *;
+.code-text {
+    font-family: $font-mono;
+    font-weight: 400;
+    &.light {
+        font-weight: 300;
+    }
+    &.medium {
+        font-weight: 500;
+    }
+    &.semibold {
+        font-weight: 600;
+    }
+    &.bold {
+        font-weight: 700;
+    }
+}
