@@ -19,7 +19,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="lg:px-16">
     <header class="text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-xl font-bold flex justify-center text-center items-center gap-2.5 ">
@@ -86,38 +86,40 @@
         </div>
     </header>
     <main class="p-4">
-        <section class="user md:p-4 flex flex-col items-center">
-            <div class="flex flex-col gap-5">
-                <div>
-                    <span class="code-text semibold text-white text-3xl">Depstor </span>
-                    <span class="code-text semibold text-[#c778dd] text-3xl">frontend
-                        developer</span>
-                </div>
-                <span class="code-text text-base text-[#abb2bf]">He crafts responsive websites where technologies meet
-                    creativity</span>
-            </div>
-            <div>
-                <div class="relative">
-                    <picture class="absolute -left-1.5 top-12 z-10">
-                        <img src="/src/images/img/Logo.png" alt="decoration" class=" w-25 h-25 object-cover">
-                    </picture>
-                    <picture class="relative z-20">
-                        <source media="(min-width: 768px)" srcset="/src/images/lg/user.png">
-                        <img src="/src/images/mobile/user.png" alt=" user " class=" object-cover">
-                    </picture>
-                    <picture class="absolute right-6 bottom-12 z-20">
-                        <img src="/src/images/img/Dots.png" alt=" decoration " class="w-14 h-14 object-cover">
-                    </picture>
-                </div>
-                <div class="flex items-center gap-2 border border-gray-400 p-3 max-w-80 max-h-[58px]">
-                    <div class="border-2 border-[#c778dd] w-4 h-4 bg-[#c778dd] flex-shrink-0"></div>
+        <div class="container mx-auto">
+            <section class="user md:p-4 flex flex-col md:flex-row md:items-start">
+                <div class="flex flex-col gap-5 lg:mt-[5%]">
                     <div>
-                        <span class="code-text text-base text-[#abb2bf]">Currently working on</span>
-                        <span class="code-text text-white medium">Portfolio</span>
+                        <span class="code-text semibold text-white text-3xl">Depstor </span>
+                        <span class="code-text semibold text-[#c778dd] text-3xl">frontend developer</span>
+                    </div>
+                    <span class="code-text text-base text-[#abb2bf]">He crafts responsive websites where technologies
+                        meet creativity</span>
+                </div>
+
+                <div class="lg:flex lg:flex-col">
+                    <div class="relative w-[313px] lg:w-[100%]">
+                        <picture class="absolute -left-1.5 top-12 z-10 lg:left-12">
+                            <img src="/src/images/img/Logo.png" alt="decoration" class="w-25 h-25 object-cover">
+                        </picture>
+                        <picture class="relative z-20">
+                            <source media="(min-width: 768px)" srcset="/src/images/lg/user.png">
+                            <img src="/src/images/mobile/user.png" alt="user" class="object-cover">
+                        </picture>
+                        <picture class="absolute right-6 bottom-12 z-20">
+                            <img src="/src/images/img/Dots.png" alt="decoration" class="w-14 h-14 object-cover">
+                        </picture>
+                    </div>
+                    <div class="flex items-center gap-2 border border-gray-400 p-3 w-80 max-h-[58px] lg:w-[450px]">
+                        <div class="border-2 border-[#c778dd] w-4 h-4 bg-[#c778dd] flex-shrink-0"></div>
+                        <div>
+                            <span class="code-text text-base text-[#abb2bf]">Currently working on</span>
+                            <span class="code-text text-white medium">Portfolio</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 </body>
 
