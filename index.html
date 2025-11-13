@@ -115,7 +115,7 @@
     </div>
     <main class="p-4">
         <div class="container mx-auto">
-            <section class="user md:p-4 flex flex-col md:flex-row md:items-start lg:justify-between">
+            <section class="user md:p-4 flex flex-col md:flex-row md:items-start lg:justify-between gap-16">
                 <div class="flex flex-col gap-5 lg:mt-[5%]">
                     <div class="text-block">
                         <span class="code-text semibold text-white text-3xl name-anim">Sergei Panteleenko - </span>
@@ -124,26 +124,25 @@
                     <span class="code-text text-base text-[#abb2bf] desc-anim">He crafts responsive websites where
                         technologies
                         meet creativity</span>
-                    <form action="#" class="hidden grid-cols-1 md:grid gap-4">
+                    <form action="#" class="hidden grid-cols-1 md:grid gap-4 form-animation">
                         <input type="text"
-                            class="border code-text border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-1"
-                            placeholder="Имя">
+                            class="form-item border code-text text-white border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-1"
+                            placeholder="Name">
                         <input type="email"
-                            class="border code-text border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-1"
+                            class="form-item border code-text text-white border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-1"
                             placeholder="Email">
                         <input type="text"
-                            class="border code-text border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-2"
-                            placeholder="Тема">
+                            class="form-item border code-text text-white border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-2"
+                            placeholder="Title">
                         <textarea name="message"
-                            class="border code-text border-gray-400 p-2 w-full h-[119px] bg-transparent md:col-span-2"
-                            placeholder="Сообщение"></textarea>
+                            class="form-item border code-text text-white border-gray-400 p-2 w-full h-[119px] bg-transparent md:col-span-2"
+                            placeholder="Message"></textarea>
                         <button type="submit"
-                            class="bg-[#c778dd] code-text text-white px-6 py-2 rounded hover:bg-[#b369c4] transition-colors md:col-span-2 justify-self-start">
+                            class="form-item bg-none border border-[#c778dd] code-text text-white px-6 py-2 rounded hover:bg-[#b369c4] transition-colors md:col-span-2 justify-self-start">
                             Send
                         </button>
                     </form>
                 </div>
-
                 <div class="lg:flex lg:flex-col">
                     <div class="relative w-[313px] lg:w-[100%]">
                         <picture class="absolute -left-1.5 top-12 z-10 md:left-[5px]">
@@ -166,6 +165,31 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="pt-6 sm:pt-10 lg:pt-16">
+                <div class="container mx-auto">
+                    <div class="flex flex-col">
+                        <span
+                            class="code-text flex items-center justify-center h-[95px] max-w-[712px] text-white medium md:text-2xl border-gray-400 p-3 border self-end" ">
+                            With great power comes great electricity bill
+                        </span>
+                        <span
+                            class=" w-[162px] h-[63px] flex items-center justify-center code-text text-white medium
+                            md:text-2xl border-gray-400 p-3 border self-end ">
+                            - Dr. Who
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class=" pt-10 ">
+                <div>
+        <div class=" flex flex-row gap-1 text-center ">
+            <span class=" code-text medium text-3xl text-[#c778dd] ">#</span>
+            <span class=" code-text medium text-3xl text-white ">projects</span>
+        </div>
+                <div></div>
+                <div></div>
+            </div>
             </section>
         </div>
     </main>
