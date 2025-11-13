@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+
+
     //Animations
     initAllAnimations();
 });

@@ -1,7 +1,8 @@
-import { initHeroAnimations, initMenuAnimations, initFormAnimations } from './allAnimationsGsap.js';
+import { initHeroAnimations, initMenuAnimations, initFormAnimations, initMenuAppearAnimations } from './allAnimationsGsap.js';
 
 export function initAllAnimations() {
     initHeroAnimations();
     initMenuAnimations();
-    initFormAnimations()
+    initFormAnimations();
+    initMenuAppearAnimations();
 };
