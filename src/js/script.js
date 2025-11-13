@@ -1,4 +1,5 @@
 import { gsap } from 'gsap';
+import { initAllAnimations } from '/src/js/animations/index.js';
 import '/src/sass/style.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,4 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
             lines[1].style.opacity = isOpen ? '0' : '1';
         }
     });
+
+
+
+    //Animations
+    initAllAnimations();
 });
