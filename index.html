@@ -124,11 +124,30 @@
                     <span class="code-text text-base text-[#abb2bf] desc-anim">He crafts responsive websites where
                         technologies
                         meet creativity</span>
+                    <form action="#" class="hidden grid-cols-1 md:grid gap-4">
+                        <input type="text"
+                            class="border code-text border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-1"
+                            placeholder="Имя">
+                        <input type="email"
+                            class="border code-text border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-1"
+                            placeholder="Email">
+                        <input type="text"
+                            class="border code-text border-gray-400 p-2 w-full max-h-[37px] bg-transparent md:col-span-2"
+                            placeholder="Тема">
+                        <textarea name="message"
+                            class="border code-text border-gray-400 p-2 w-full h-[119px] bg-transparent md:col-span-2"
+                            placeholder="Сообщение"></textarea>
+                        <button type="submit"
+                            class="bg-[#c778dd] code-text text-white px-6 py-2 rounded hover:bg-[#b369c4] transition-colors md:col-span-2 justify-self-start">
+                            Send
+                        </button>
+                    </form>
                 </div>
 
                 <div class="lg:flex lg:flex-col">
                     <div class="relative w-[313px] lg:w-[100%]">
-                        <picture class="absolute -left-1.5 top-12 z-10 lg:left-12">
+                        <picture class="absolute -left-1.5 top-12 z-10 md:left-[5px]">
+                            <source media="(min-width: 768px)" srcset="/src/images/img/Logo-lg.png">
                             <img src="/src/images/img/Logo.png" alt="decoration" class="w-25 h-25 object-cover">
                         </picture>
                         <picture class="relative z-20">
