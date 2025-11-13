@@ -51,3 +51,35 @@ export function initMenuAnimations() {
         });
     });
 }
+
+export function initFormAnimations() {
+    const form = document.querySelector('.form-animation');
+    if (!form) return;
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: form,
+            start: 'top 85%',
+            end: 'bottom 15%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    tl.to(form, {
+        duration: 0.3,
+        opacity: 0.3,
+        x: () => gsap.utils.random(-5, 5),
+        y: () => gsap.utils.random(-3, 3),
+        repeat: 3,
+        yoyo: true,
+        ease: 'power1.inOut'
+    })
+        .from('.form-item', {
+            duration: 0.5,
+            y: 40,
+            opacity: 0,
+            filter: 'blur(10px)',
+            stagger: 0.08,
+            ease: 'power3.out'
+        });
+}
