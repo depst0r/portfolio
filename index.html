@@ -323,50 +323,82 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col">
-                    <div class="relative h-[200px]">
-                        <img src="/src/images/img/Dots.png" alt="dots" class="absolute top-6 left-10">
-                        <img src="/src/images/img/Dots.png" alt="dots" class="absolute bottom-10 right-6">
-                        <img src="/src/images/img/rectangle-lg.png" alt="rectangle" class="absolute top-12 right-12">
-                        <img src="/src/images/img/rectangle-sm.png" alt="rectangle" class="absolute bottom-12 left-12">
+
+                <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mt-8">
+                    <div class="relative h-[200px] w-full lg:w-1/3 flex-shrink-0">
+                        <img src="/src/images/img/Dots.png" alt="dots" class="absolute top-6 left-10 animate-pulse">
+                        <img src="/src/images/img/Dots.png" alt="dots"
+                            class="absolute bottom-10 right-6 animate-pulse delay-300">
+                        <img src="/src/images/img/rectangle-lg.png" alt="rectangle"
+                            class="absolute top-12 right-12 transition-transform hover:scale-110">
+                        <img src="/src/images/img/rectangle-sm.png" alt="rectangle"
+                            class="absolute bottom-12 left-12 transition-transform hover:scale-110">
                         <img src="/src/images/img/Logo.png" alt="logo"
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-125">
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-125 transition-all hover:scale-150">
                     </div>
-                    <div class="grid grid-cols-1 gap-3">
-                        <div>
-                            <div class="border border-gray-400 p-3"><span
-                                    class="code-text text-base semibold text-white">Languages</span></div>
-                            <div class="border border-gray-400 p-3 border-t-0"><span
-                                    class="code-text text-base text-[#abb2bf]">JavaScript</span></div>
-                        </div>
-                        <div>
-                            <div class="border border-gray-400 p-3"><span
-                                    class="code-text text-base semibold text-white">Other</span></div>
-                            <div class="border border-gray-400 p-3 border-t-0">
-                                <span class="code-text text-base text-[#abb2bf]">HTML</span>
-                                <span class="code-text text-base text-[#abb2bf]">CSS</span>
-                                <span class="code-text text-base text-[#abb2bf]">SCSS</span>
-                                <span class="code-text text-base text-[#abb2bf]">REST-API</span>
-                                <span class="code-text text-base text-[#abb2bf]">BEM</span>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 w-full">
+                        <div class="group transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                            <div
+                                class="border border-gray-400 p-3 bg-gray-800/50 group-hover:bg-gray-800/80 transition-colors">
+                                <span class="code-text text-base semibold text-white">Languages</span>
+                            </div>
+                            <div
+                                class="border border-gray-400 p-3 border-t-0 bg-gray-900/30 group-hover:bg-gray-900/50">
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer">JavaScript</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="border border-gray-400 p-3"><span
-                                    class="code-text text-base semibold text-white">Tools</span></div>
-                            <div class="border border-gray-400 p-3 border-t-0">
-                                <span class="code-text text-base text-[#abb2bf]">Git</span>
-                                <span class="code-text text-base text-[#abb2bf]">Webpack</span>
-                                <span class="code-text text-base text-[#abb2bf]">Vite</span>
+
+                        <div class="group transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                            <div class="border border-gray-400 p-3 bg-gray-800/50 group-hover:bg-gray-800/80">
+                                <span class="code-text text-base semibold text-white">Other</span>
+                            </div>
+                            <div
+                                class="border border-gray-400 p-3 border-t-0 bg-gray-900/30 group-hover:bg-gray-900/50 flex flex-wrap gap-2">
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">HTML</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">CSS</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">SCSS</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">REST-API</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">BEM</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="border border-gray-400 p-3"><span
-                                    class="code-text text-base semibold text-white">Frameworks</span></div>
-                            <div class="border border-gray-400 p-3 border-t-0">
-                                <span class="code-text text-base text-[#abb2bf]">React</span>
-                                <span class="code-text text-base text-[#abb2bf]">Bootstrap</span>
-                                <span class="code-text text-base text-[#abb2bf]">Tailwind</span>
-                                <span class="code-text text-base text-[#abb2bf]">Redux</span>
+
+                        <div class="group transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                            <div class="border border-gray-400 p-3 bg-gray-800/50 group-hover:bg-gray-800/80">
+                                <span class="code-text text-base semibold text-white">Tools</span>
+                            </div>
+                            <div
+                                class="border border-gray-400 p-3 border-t-0 bg-gray-900/30 group-hover:bg-gray-900/50 flex flex-wrap gap-2">
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">Git</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">Webpack</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">Vite</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group transition-all duration-300 hover:scale-105 hover:shadow-lg sm:col-span-2 lg:col-span-1">
+                            <div class="border border-gray-400 p-3 bg-gray-800/50 group-hover:bg-gray-800/80">
+                                <span class="code-text text-base semibold text-white">Frameworks</span>
+                            </div>
+                            <div
+                                class="border border-gray-400 p-3 border-t-0 bg-gray-900/30 group-hover:bg-gray-900/50 flex flex-wrap gap-2">
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">React</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">Bootstrap</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">Tailwind</span>
+                                <span
+                                    class="code-text text-base text-[#abb2bf] hover:text-white transition-colors cursor-pointer px-2 py-1 rounded hover:bg-gray-700/50">Redux</span>
                             </div>
                         </div>
                     </div>
