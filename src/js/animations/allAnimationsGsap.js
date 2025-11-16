@@ -1,4 +1,7 @@
 import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
 
 export function initHeroAnimations() {
     const tl = gsap.timeline();
@@ -66,14 +69,14 @@ export function initFormAnimations() {
     });
 
     tl.to(form, {
-        duration: 0.3,
-        opacity: 0.3,
-        x: () => gsap.utils.random(-5, 5),
-        y: () => gsap.utils.random(-3, 3),
-        repeat: 3,
-        yoyo: true,
-        ease: 'power1.inOut'
-    })
+            duration: 0.3,
+            opacity: 0.3,
+            x: () => gsap.utils.random(-5, 5),
+            y: () => gsap.utils.random(-3, 3),
+            repeat: 3,
+            yoyo: true,
+            ease: 'power1.inOut'
+        })
         .from('.form-item', {
             duration: 0.5,
             y: 40,
@@ -117,11 +120,11 @@ export function initMenuAppearAnimations() {
         });
 
         tl.to(link, {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            ease: 'power3.out'
-        })
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: 'power3.out'
+            })
             .to(link, {
                 color: '#00ff00',
                 duration: 0.3,
@@ -132,5 +135,28 @@ export function initMenuAppearAnimations() {
                 duration: 0.5,
                 ease: 'power2.out'
             });
+    });
+}
+
+export function initAnimationPortfolio() {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.portfolio-card').forEach((card, index) => {
+        gsap.fromTo(card, {
+            opacity: 0,
+            y: 80,
+            rotationX: 10
+        }, {
+            opacity: 1,
+            y: 0,
+            rotationX: 0,
+            duration: 0.8,
+            delay: index * 0.1,
+            ease: "back.out(1.2)",
+            scrollTrigger: {
+                trigger: card,
+                start: "top 85%",
+                toggleActions: "play none reverse none"
+            }
+        });
     });
 }
