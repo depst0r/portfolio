@@ -145,7 +145,7 @@ export function initAnimationPortfolio() {
     gsap.utils.toArray('.portfolio-card').forEach((card, index) => {
         ScrollTrigger.create({
             trigger: card,
-            start: "top 85%",
+            start: "top 70%",
             onEnter: () => {
                 gsap.fromTo(card, {
                     opacity: 0,
