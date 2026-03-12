@@ -1,36 +1,16 @@
-# 🌟 Мое портфолио сайт
+# React + Vite
 
-Добро пожаловать! Это мой личный сайт-портфолио, где я делюсь своими проектами, навыками и контактной информацией.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🛠 Технологии
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Используемые технологии для создания сайта:
+## React Compiler
 
-- **HTML** — структура страниц
-- **SCSS** **Tailwindcss**— стилизация и оформление
-- **JavaScript** — интерактивность
-- **Vite** — современный сборщик и быстрый разработческий сервер
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the ESLint configuration
 
-## 🚀 Особенности проекта
-
-✨ Быстрая сборка и оптимизация с помощью Vite  
-🎨 Адаптивный дизайн для всех устройств  
-🌐 Современные веб-технологии  
-⚡ Простая настройка и расширение
-
----
-
-## 📁 Структура проекта
-
-- `index.html` — главная страница
-- `src/` — исходные файлы (SCSS, JS)
-- `dist/` — собранные файлы для деплоя
-
----
-
-<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/415ac492-b533-45a8-b3b6-9adfc3188e5f" />
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
