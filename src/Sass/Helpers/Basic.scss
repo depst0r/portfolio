@@ -1,0 +1,26 @@
+@import '../Helpers/Variables.scss';
+
+body {
+    background-color: $background;
+    font-family: $font-mono;
+
+    .container {
+          padding: 0 120px;  
+    }
+
+    li {
+    list-style-type: none;
+}
+
+    a {
+        outline: 0 !important;
+        outline: none !important;
+        box-shadow: none !important;
+        text-decoration: none !important;
+    }
+
+    h6 {
+        padding: 0;
+        margin: 0;
+    }
+}
