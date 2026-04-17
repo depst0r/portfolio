@@ -7,12 +7,6 @@
         justify-content: end;
     }
 
-    &__columns {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     &__logo {
         display: flex;
         align-items: center;
@@ -31,4 +25,35 @@
         text-transform: lowercase;
     }
 
+    &__navigation {
+        &-mobile {
+            position: relative;
+            width: 100;
+            height: 100vh;
+            background-color: $background;
+        }
+
+        &-menu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-link {
+            color: $gray;
+            font-size: 30px;
+            text-transform: lowercase;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        &__columns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 }
