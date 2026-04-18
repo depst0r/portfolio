@@ -17,6 +17,19 @@
             color: $white;
             font-weight: 700;
         }
+        &-col:nth-child(1) {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    &__links {
+        &-socials {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     &__link {
@@ -45,7 +58,9 @@
             text-transform: lowercase;
         }
     }
-
+    .icon__link {
+        color: $gray;
+    }
 }
 
 @media screen and (min-width: 768px) {
