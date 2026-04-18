@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {motion, AnimatePresence} from 'framer-motion';
+import { motion } from 'framer-motion';
 import HeaderDesktop from '../Header/HeaderDesktop.jsx';
 import HeaderMobile from '../Header/HeaderMobile.jsx';
 import Logo from '../../Images/Logo.png';
@@ -45,8 +45,8 @@ const Header = () => {
                     </div>
                 </button> : null}
             </div>
-            { !isMobile ? <HeaderDesktop/> : <HeaderMobile/> }
-            </div>
+            { !isMobile ? <HeaderDesktop/> : <HeaderMobile isMenuOpen={isMenuOpen}/> }
+        </div>
     </div>
     </header>
     )
