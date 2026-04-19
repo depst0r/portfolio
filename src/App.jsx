@@ -1,4 +1,5 @@
 import Header  from './Components/Header/Header.jsx';
+import Main from './Components/Main/Main.jsx';
 import './App.scss'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <div className='container'>
       <Header/>
+      <Main/>
     </div>
   )
 }

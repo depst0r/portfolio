@@ -1,23 +1,23 @@
 
-const Headerdesktop = () => {
+const HeaderDesktop = () => {
     return (
-                    <nav className="header__navigation">
+        <nav className="header__navigation">
             <ul className="header__menu">
                 <li className="header__links">
-                    <a href="#" className="header__link">#Home</a>
+                    <a href="#" className="header__link"><span className="hash">#</span>Home</a>
                     </li>
                 <li className="header__links">
-                    <a href="#" className="header__link">#Works</a>
+                    <a href="#" className="header__link"><span className="hash">#</span>Works</a>
                     </li>
                 <li className="header__links">
-                    <a href="#" className="header__link">#About-me</a>
+                    <a href="#" className="header__link"><span className="hash">#</span>About-me</a>
                     </li>
                 <li className="header__links">
-                    <a href="#" className="header__link">#Contacts</a>
-                </li>
+                    <a href="#" className="header__link"><span className="hash">#</span>Contacts</a>
+            </li>
         </ul>
             </nav>
     )
 }
 
-export default Headerdesktop;
+export default HeaderDesktop;
