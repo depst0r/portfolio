@@ -1,6 +1,8 @@
 
 import './Main.scss'
 import User from '../../Images/Main/user.png';
+import Dots from '../../Images/Figure/Dots.png';
+import Logo from '../../Images/Figure/Logo.png';
 
 const Main = () => {
     return (
@@ -18,9 +20,11 @@ const Main = () => {
                         </span>
                     </div>
                 </div>
-        <div className="main__images">
-            <img src={User} alt="User" className="main__images-user" />
-        </div>
+            <div className="main__images">
+                <img src={Dots} alt="User" className="main__images-dots" />
+                <img src={User} alt="User" className="main__images-user" />
+                <img src={Logo} alt="User" className="main__images-figure" />
+            </div>
             </div>
         </main>
     )
