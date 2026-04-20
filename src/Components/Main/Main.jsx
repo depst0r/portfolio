@@ -25,6 +25,9 @@ const Main = () => {
                 <img src={User} alt="User" className="main__images-user" />
                 <img src={Logo} alt="User" className="main__images-figure" />
             </div>
+            <div className="main__info">
+                <div className="main__info-wrap"></div>
+            </div>
             </div>
         </main>
     )
