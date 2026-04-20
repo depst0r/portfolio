@@ -13,10 +13,16 @@ const Header = () => {
     const togglleMenu = () => setIsMenuOpen(!isMenuOpen) 
 
     useEffect(() => {
+
         const headleResize = () => {
             if (window.innerWidth > 768) {
                 setIsMenuOpen(false)
+                setIsMobile(false)
+            } else {
+                setIsMobile(true)
             }
+
+            
         }
 
         window.addEventListener('resize', headleResize)
