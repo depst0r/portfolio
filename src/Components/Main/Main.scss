@@ -17,11 +17,6 @@
 
     &__subtitle {
             padding-top: 25px;
-            .sub {
-                font-weight: 400;
-                font-size: 16px;
-                color: $gray;
-            }
         }
         &__images {
             position: relative;
@@ -29,7 +24,8 @@
             &-user {
                 position: absolute;
                 width: 85%;
-                max-width: 350px;
+                width: 350px;
+                // min-width: 300px;
                 z-index: 35;
             }
             &-figure {
@@ -44,5 +40,29 @@
                 top: 216px;
             }
         }
+        &__info {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: -354px;
+            border: 1px solid $gray;
+            padding: 8px;
+            width: 320px;
+            height: 58px;
+            &-wrap {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            &-square {
+                width: 16px;
+                height: 16px;
+                background-color: $primary;
+            }
+        }
 
+        .text {
+            color: $white;
+        }
 }

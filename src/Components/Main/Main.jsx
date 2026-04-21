@@ -24,9 +24,15 @@ const Main = () => {
                 <img src={Dots} alt="User" className="main__images-dots" />
                 <img src={User} alt="User" className="main__images-user" />
                 <img src={Logo} alt="User" className="main__images-figure" />
-            </div>
             <div className="main__info">
-                <div className="main__info-wrap"></div>
+                <div className="main__info-wrap">
+                    <div className="main__info-square"></div>
+                    <div className="main__info-text">
+                        <span className="sub">Currently working on </span>
+                        <span className='text'>Portfolio</span>
+                    </div>
+                </div>
+            </div>
             </div>
             </div>
         </main>
