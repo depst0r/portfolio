@@ -22,8 +22,8 @@
             position: relative;
             padding-top: 24px;
             &-user {
-                position: absolute;
-                width: 85%;
+                // position: absolute;
+                // width: 85%;
                 width: 350px;
                 // min-width: 300px;
                 z-index: 35;
@@ -41,7 +41,7 @@
             }
         }
         &__info {
-            position: absolute;
+            // position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;

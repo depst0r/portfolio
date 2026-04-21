@@ -4,6 +4,8 @@ import User from '../../Images/Main/user.png';
 import Dots from '../../Images/Figure/Dots.png';
 import Logo from '../../Images/Figure/Logo.png';
 
+import Form from '../Form/Form.jsx';
+
 const Main = () => {
     return (
         <main className="main">
@@ -20,20 +22,20 @@ const Main = () => {
                         </span>
                     </div>
                 </div>
-            <div className="main__images">
-                <img src={Dots} alt="User" className="main__images-dots" />
-                <img src={User} alt="User" className="main__images-user" />
-                <img src={Logo} alt="User" className="main__images-figure" />
-            <div className="main__info">
-                <div className="main__info-wrap">
-                    <div className="main__info-square"></div>
-                    <div className="main__info-text">
-                        <span className="sub">Currently working on </span>
-                        <span className='text'>Portfolio</span>
+                <div className="main__images">
+                    <img src={Dots} alt="User" className="main__images-dots" />
+                    <img src={User} alt="User" className="main__images-user" />
+                    <img src={Logo} alt="User" className="main__images-figure" />
+                <div className="main__info">
+                    <div className="main__info-wrap">
+                        <div className="main__info-square"></div>
+                        <div className="main__info-text">
+                            <span className="sub">Currently working on </span>
+                            <span className='text'>Portfolio</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
+                </div>
             </div>
         </main>
     )
