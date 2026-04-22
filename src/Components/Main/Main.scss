@@ -30,15 +30,15 @@
             }
             &-figure {
                 position: absolute;
-                left: 37px;
-                top: 148px;
+                left: -2px;
+                top: 89px;
                 z-index: -9;
             }
             &-dots {
                 position: absolute;
                 z-index: 99999;
-                left: 367px;
-                top: 262px;
+                left: 211px;
+                top: 187px;
             }
         }
         &__info {
@@ -50,7 +50,7 @@
             bottom: 6px;
             border: 1px solid $gray;
             padding: 8px;
-            width: 457px;
+            width: 320px;
             height: 58px;
             &-wrap {
                 display: flex;
@@ -80,6 +80,9 @@
         }
         &__title {
             font-size: 41px !important;
+        }
+        &__info {
+            width: 436px;
         }
     }
     .sub {

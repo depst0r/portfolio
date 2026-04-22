@@ -1,6 +1,7 @@
 
 import './Main.scss'
 import User from '../../Images/Main/user.png';
+import UserLg from '../../Images/Main/Lg/user.png'
 import Dots from '../../Images/Figure/Dots.png';
 import Logo from '../../Images/Figure/Logo.png';
 
@@ -24,7 +25,18 @@ const Main = () => {
                 </div>
                 <div className="main__images">
                     <img src={Dots} alt="User" className="main__images-dots" />
-                    <img src={User} alt="User" className="main__images-user" />
+                    {/* <img src={User} alt="User" className="main__images-user" /> */}
+                        <picture>
+                        <source 
+                            media="(min-width: 768px)" 
+                            srcSet={UserLg}  
+                        />
+                        <img 
+                            src={User}  
+                            alt="user" 
+                            className="main__images-user"
+                        />
+                        </picture>
                     <img src={Logo} alt="User" className="main__images-figure" />
                 <div className="main__info">
                     <div className="main__info-wrap">
