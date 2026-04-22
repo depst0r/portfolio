@@ -8,8 +8,11 @@ body {
     background-color: $background;
     font-family: $font-mono;
 
+
     .container {
+        max-width: 1440px;
         padding: 0 16px;  
+        margin: 0 auto;
     }
 
     .sub {
@@ -58,6 +61,6 @@ body {
 
 @media screen and (min-width: 768px) {
     .container {
-        padding: 0 70px !important;
+        padding: 0 40px !important;
     }
 }

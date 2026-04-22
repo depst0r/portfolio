@@ -24,20 +24,21 @@
             &-user {
                 // position: absolute;
                 // width: 85%;
-                width: 350px;
+                // width: 350px;
                 // min-width: 300px;
                 z-index: 35;
             }
             &-figure {
                 position: absolute;
-                left: 2px;
-                top: 82px;
+                left: 37px;
+                top: 148px;
+                z-index: -9;
             }
             &-dots {
                 position: absolute;
                 z-index: 99999;
-                left: 264px;
-                top: 216px;
+                left: 367px;
+                top: 262px;
             }
         }
         &__info {
@@ -45,10 +46,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            bottom: -354px;
+            position: relative;
+            bottom: 6px;
             border: 1px solid $gray;
             padding: 8px;
-            width: 320px;
+            width: 457px;
             height: 58px;
             &-wrap {
                 display: flex;
@@ -65,4 +67,22 @@
         .text {
             color: $white;
         }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__images {
+            padding: 0;
+        }
+        &__title {
+            font-size: 41px !important;
+        }
+    }
+    .sub {
+        font-size: 23px !important;
+    }
 }
