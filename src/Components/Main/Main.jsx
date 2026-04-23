@@ -22,6 +22,7 @@ const Main = () => {
                             meet creativity
                         </span>
                     </div>
+                    <button type="button" className='open-form'>Contact me !!</button>
                 </div>
                 <div className="main__images">
                     <img src={Dots} alt="User" className="main__images-dots" />

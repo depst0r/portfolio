@@ -2,6 +2,9 @@
 
 .main {
     padding-top: 34px;
+    &__titles {
+        padding-top: 50px;
+    }
     &__title {
         &:nth-child(1) {
             font-weight: 600;
@@ -17,6 +20,7 @@
 
     &__subtitle {
             padding-top: 25px;
+            max-width: 500px;
         }
         &__images {
             position: relative;
@@ -67,6 +71,26 @@
         .text {
             color: $white;
         }
+
+        .open-form {
+            margin-top: 50px;
+            border: 1px solid $primary;
+            padding: 8px 16px;
+            width: 148px;
+            height: 37px;
+            background: transparent;
+            font-weight: 500;
+            font-size: 16px;
+            color: $white;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: $primary;
+                border-color: $white;
+                color: black;
+                border-radius: 20px;
+            }
+        }
 }
 
 @media screen and (min-width: 768px) {
@@ -77,6 +101,14 @@
         }
         &__images {
             padding: 0;
+            &-dots {
+                left: 362px;
+                top: 232px;
+            }
+            &-figure {
+                left: 36px;
+                top: 125px;
+            }
         }
         &__title {
             font-size: 41px !important;

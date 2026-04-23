@@ -64,3 +64,15 @@ body {
         padding: 0 40px !important;
     }
 }
+
+@media screen and (min-width: 1080px) {
+    .container {
+        padding: 0 70px !important;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .container {
+        padding: 0 120px !important;
+    }
+}
