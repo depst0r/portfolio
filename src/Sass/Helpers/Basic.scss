@@ -10,7 +10,7 @@ body {
 
 
     .container {
-        max-width: 1440px;
+        max-width: 1920px;
         padding: 0 16px;  
         margin: 0 auto;
     }
@@ -61,18 +61,28 @@ body {
 
 @media screen and (min-width: 768px) {
     .container {
-        padding: 0 40px !important;
+        padding: 0 50px !important;
     }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
     .container {
         padding: 0 70px !important;
     }
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1280px) {
     .container {
         padding: 0 120px !important;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 170px !important;
+    }
+}
+
+
+
+

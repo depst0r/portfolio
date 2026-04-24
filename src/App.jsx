@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Header  from './Components/Header/Header.jsx';
 import Main from './Components/Main/Main.jsx';
 import Form from './Components/Form/Form.jsx';
@@ -6,12 +7,26 @@ import './App.scss'
 
 function App() {
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+      useEffect(() => {
+        const headleResize = () => {
+            if (window.innerWidth > 768) {
+                setIsMobile(false)
+            } else {
+                setIsMobile(true)
+            }  
+        }
+
+        window.addEventListener('resize', headleResize)
+        return () => window.removeEventListener('resize', headleResize)
+    }, [])
 
   return (
     <div className='container'>
-      <Header/>
+      <Header isMobile={isMobile} />
       <Main/>
-      <Social/>
+      <Social isMobile={isMobile}/>
     </div>
   )
 }

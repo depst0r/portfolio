@@ -5,9 +5,8 @@ import HeaderMobile from '../Header/HeaderMobile.jsx';
 import Logo from '../../Images/Logo.png';
 import './Header.scss';
 
-const Header = () => {
+const Header = ({isMobile}) => {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const togglleMenu = () => setIsMenuOpen(!isMenuOpen) 
@@ -16,9 +15,6 @@ const Header = () => {
         const headleResize = () => {
             if (window.innerWidth > 768) {
                 setIsMenuOpen(false)
-                setIsMobile(false)
-            } else {
-                setIsMobile(true)
             }  
         }
 
@@ -48,7 +44,7 @@ const Header = () => {
                     </div>
                 </button> : null}
             </div>
-            { !isMobile ? <HeaderDesktop/> : <HeaderMobile isMenuOpen={isMenuOpen}/> }
+            { !isMobile ? <HeaderDesktop/> : <HeaderMobile isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/> }
         </div>
     </div>
     </header>

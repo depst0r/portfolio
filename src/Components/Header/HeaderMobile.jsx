@@ -1,6 +1,6 @@
 import {motion, AnimatePresence} from 'framer-motion';
 
-const HeaderMobile = ({isMenuOpen}) => {
+const HeaderMobile = ({isMenuOpen, setIsMenuOpen}) => {
 
 console.log(isMenuOpen)
     return (
@@ -14,16 +14,16 @@ console.log(isMenuOpen)
                     <nav className="header__navigation-mobile">
                         <ul className="header__navigation-menu">
                             <li className="header__navigation-links">
-                                <a href="#" className="header__navigation-link"><span className="hash">#</span>Home</a>
+                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Home</a>
                                 </li>
                             <li className="header__links">
-                                <a href="#" className="header__navigation-link"><span className="hash">#</span>Works</a>
+                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Works</a>
                                 </li>
                             <li className="header__links">
-                                <a href="#" className="header__navigation-link"><span className="hash">#</span>About-me</a>
+                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>About-me</a>
                                 </li>
                             <li className="header__links">
-                                <a href="#" className="header__navigation-link"><span className="hash">#</span>Contacts</a>
+                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Contacts</a>
                         </li>
                         <li>
                     <div className="header__links-socials">
