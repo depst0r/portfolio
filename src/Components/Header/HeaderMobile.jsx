@@ -1,0 +1,56 @@
+import {motion, AnimatePresence} from 'framer-motion';
+
+const HeaderMobile = ({isMenuOpen, setIsMenuOpen}) => {
+
+console.log('Mobile',isMenuOpen)
+
+    return (
+        <AnimatePresence>
+            {isMenuOpen && (
+                <motion.div className="header__wrapper"
+                    initial={{x: '100%'}}
+                    animate={{x: 0}}
+                    exit={{x: '100%'}}
+                >
+                    <nav className="header__navigation-mobile">
+                        <ul className="header__navigation-menu">
+                            <li className="header__navigation-links">
+                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Home</a>
+                                </li>
+                            <li className="header__links">
+                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Works</a>
+                                </li>
+                            <li className="header__links">
+                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>About-me</a>
+                                </li>
+                            <li className="header__links">
+                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Contacts</a>
+                        </li>
+                        <li>
+                    <div className="header__links-socials">
+                        <a className="icon__link" href="">
+                            <svg className="icon" fill="currentColor" viewBox="0 0 50 50" width="100" height="100">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                                </svg>
+                            </a>
+                            <a className="icon__link" href="">
+                                <svg className="icon" fill="currentColor" viewBox="0 0 50 50" width="100" height="100">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                                </svg>
+                                </a>
+                                <a className="icon__link" href="">
+                                    <svg className="icon" fill="currentColor" width="55" height="55" viewBox="0 0 50 50">
+                                        <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
+                                        </svg>
+                                    </a>
+                                    </div>
+                        </li>
+                    </ul>
+                    </nav>
+                </motion.div>
+    )}
+        </AnimatePresence>
+    )
+}
+
+export default HeaderMobile;

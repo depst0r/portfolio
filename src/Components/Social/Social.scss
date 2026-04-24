@@ -1,0 +1,19 @@
+@import '../../Sass/Helpers/Variables.scss';
+
+.social {
+    position: fixed;
+    left: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        padding: 0;
+        margin: 0;
+    }
+    &__link {
+        color: $gray;
+    }
+}

@@ -1,0 +1,138 @@
+@import '../../Sass/Helpers/Variables.scss';
+
+.main {
+    padding-top: 34px;
+    &__titles {
+        padding-top: 50px;
+    }
+    &__title {
+        &:nth-child(1) {
+            font-weight: 600;
+            font-size: 32px;
+            color: $white;
+        }
+        &:nth-child(2) {
+            font-weight: 600;
+            font-size: 32px;
+            color: $primary;
+        }
+    }
+
+    &__subtitle {
+            padding-top: 25px;
+            max-width: 500px;
+        }
+        &__images {
+            position: relative;
+            padding-top: 24px;
+            &-user {
+                // position: absolute;
+                // width: 85%;
+                // width: 350px;
+                // min-width: 300px;
+                z-index: 35;
+            }
+            &-figure {
+                position: absolute;
+                left: -2px;
+                top: 89px;
+                z-index: -9;
+            }
+            &-dots {
+                position: absolute;
+                z-index: 99999;
+                left: 211px;
+                top: 187px;
+            }
+        }
+        &__info {
+            // position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            bottom: 6px;
+            border: 1px solid $gray;
+            padding: 8px;
+            width: 320px;
+            height: 58px;
+            &-wrap {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            &-square {
+                width: 16px;
+                height: 16px;
+                background-color: $primary;
+            }
+        }
+
+        &__quotation {
+            &-text {
+                font-weight: 500;
+                color: $gray;
+            }
+        }
+
+        .text {
+            color: $white;
+        }
+
+        .quotion__col {
+            padding: 20px;
+            border: 2px solid $gray;
+            &:nth-child(2) {
+                border-top: transparent;
+            }
+        }
+
+        .open-form {
+            margin-top: 50px;
+            border: 1px solid $primary;
+            padding: 8px 16px;
+            width: 148px;
+            height: 37px;
+            background: transparent;
+            font-weight: 500;
+            font-size: 16px;
+            color: $white;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: $primary;
+                border-color: $white;
+                color: black;
+                border-radius: 20px;
+            }
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__images {
+            padding: 0;
+            &-dots {
+                left: 362px;
+                top: 232px;
+            }
+            &-figure {
+                left: 36px;
+                top: 125px;
+            }
+        }
+        &__title {
+            font-size: 41px !important;
+        }
+        &__info {
+            width: 436px;
+        }
+    }
+    .sub {
+        font-size: 23px !important;
+    }
+}
