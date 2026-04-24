@@ -2,7 +2,8 @@ import {motion, AnimatePresence} from 'framer-motion';
 
 const HeaderMobile = ({isMenuOpen, setIsMenuOpen}) => {
 
-console.log(isMenuOpen)
+console.log('Mobile',isMenuOpen)
+
     return (
         <AnimatePresence>
             {isMenuOpen && (

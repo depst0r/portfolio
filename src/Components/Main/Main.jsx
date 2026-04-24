@@ -50,6 +50,18 @@ const Main = () => {
                 </div>
                 </div>
             </div>
+                <div className="main__quotation">
+                    <div className="quotion__col">
+                        <span className="main__quotation-text">
+                            With great power comes great electricity bill
+                    </span>
+                    </div>
+                    <div className="quotion__col">
+                        <span className="main__quotation-text">
+                        - Dr. Who
+                    </span>
+                    </div>
+                </div>
         </main>
     )
 }

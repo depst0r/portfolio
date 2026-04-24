@@ -68,8 +68,23 @@
             }
         }
 
+        &__quotation {
+            &-text {
+                font-weight: 500;
+                color: $gray;
+            }
+        }
+
         .text {
             color: $white;
+        }
+
+        .quotion__col {
+            padding: 20px;
+            border: 2px solid $gray;
+            &:nth-child(2) {
+                border-top: transparent;
+            }
         }
 
         .open-form {
