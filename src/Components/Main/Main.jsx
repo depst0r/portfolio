@@ -12,10 +12,10 @@ const Main = () => {
         <main className="main">
             <div className="main__wrapper">
                 <div className="main__titles">
-                    <h1 className="main__title">Sergei Panteleenko - </h1>
-                    <h3 className="main__title">frontend developer</h3>
+                    <h1 className="main__title title-h1">Sergei Panteleenko - </h1>
+                    <h3 className="main__title title-h1">frontend developer</h3>
                     <div className="main__subtitle">
-                        <span className="sub">
+                        <span className="subtitle">
                             He crafts responsive websites
                             where
                             technologies

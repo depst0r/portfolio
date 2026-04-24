@@ -7,13 +7,9 @@
     }
     &__title {
         &:nth-child(1) {
-            font-weight: 600;
-            font-size: 32px;
             color: $white;
         }
         &:nth-child(2) {
-            font-weight: 600;
-            font-size: 32px;
             color: $primary;
         }
     }
@@ -125,14 +121,8 @@
                 top: 125px;
             }
         }
-        &__title {
-            font-size: 41px !important;
-        }
         &__info {
             width: 436px;
         }
-    }
-    .sub {
-        font-size: 23px !important;
     }
 }
