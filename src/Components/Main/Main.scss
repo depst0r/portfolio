@@ -65,6 +65,11 @@
         }
 
         &__quotation {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+            padding-top: 30px;
             &-text {
                 font-weight: 500;
                 color: $gray;
@@ -78,8 +83,12 @@
         .quotion__col {
             padding: 20px;
             border: 2px solid $gray;
+            &:nth-child(1) {
+                max-width: 426px;
+            }
             &:nth-child(2) {
                 border-top: transparent;
+                max-width: 200px;
             }
         }
 

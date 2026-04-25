@@ -52,11 +52,11 @@ const Main = () => {
             </div>
                 <div className="main__quotation">
                     <div className="quotion__col">
-                        <span className="main__quotation-text">
+                        <span className="main__quotation-text subtitle">
                             With great power comes great electricity bill
                     </span>
                     </div>
-                    <div className="quotion__col">
+                    <div className="quotion__col subtitle">
                         <span className="main__quotation-text">
                         - Dr. Who
                     </span>
