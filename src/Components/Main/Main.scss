@@ -16,7 +16,7 @@
 
     &__subtitle {
             padding-top: 25px;
-            max-width: 500px;
+            max-width: 666px;
         }
         &__images {
             position: relative;
@@ -84,11 +84,11 @@
             padding: 20px;
             border: 2px solid $gray;
             &:nth-child(1) {
-                max-width: 426px;
+                max-width: 740px;
             }
             &:nth-child(2) {
                 border-top: transparent;
-                max-width: 200px;
+                max-width: 300px;
             }
         }
 
@@ -105,9 +105,7 @@
             cursor: pointer;
             transition: all 0.2s ease-in-out;
             &:hover {
-                background-color: $primary;
-                border-color: $white;
-                color: black;
+                background: rgba(199, 120, 221, 0.2);
                 border-radius: 20px;
             }
         }

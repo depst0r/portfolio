@@ -6,6 +6,18 @@
     font-weight: 600;
 }
 
+.title-h4 {
+    @include title-responsive (18px, 23px, 27px, 35px);
+    font-weight: 500;
+    color: $white;
+}
+
+.hash-symbol {
+        @include title-responsive (18px, 23px, 27px, 35px);
+        font-weight: 500;
+        color: $primary;
+}
+
 .subtitle {
     @include title-responsive (16px, 20px, 28px, 32px);
     font-weight: 400;

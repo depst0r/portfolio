@@ -1,0 +1,46 @@
+@import '../../Sass/Helpers/Variables.scss';
+
+.project {
+    padding-top: 50px;
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 60%;
+        &-line {
+            flex-shrink: 0;
+            flex: 1;
+            min-width: 50px;
+            height: 2px;
+            background: $primary;
+        }
+    }
+    &__header {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card {
+        border: 1px solid $gray;
+    }
+
+    .card {
+        &__lang {
+            border-bottom: 1px solid $gray;
+        }
+        &__buttons {
+            border-top: 1px solid $gray;
+        }
+}
+
+    .link {
+        font-weight: 500;
+        font-size: 16px;
+        color: $white;
+    }
+}
