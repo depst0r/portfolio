@@ -7,20 +7,16 @@
     }
     &__title {
         &:nth-child(1) {
-            font-weight: 600;
-            font-size: 32px;
             color: $white;
         }
         &:nth-child(2) {
-            font-weight: 600;
-            font-size: 32px;
             color: $primary;
         }
     }
 
     &__subtitle {
             padding-top: 25px;
-            max-width: 500px;
+            max-width: 666px;
         }
         &__images {
             position: relative;
@@ -69,6 +65,11 @@
         }
 
         &__quotation {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+            padding-top: 30px;
             &-text {
                 font-weight: 500;
                 color: $gray;
@@ -82,8 +83,12 @@
         .quotion__col {
             padding: 20px;
             border: 2px solid $gray;
+            &:nth-child(1) {
+                max-width: 740px;
+            }
             &:nth-child(2) {
                 border-top: transparent;
+                max-width: 300px;
             }
         }
 
@@ -100,9 +105,7 @@
             cursor: pointer;
             transition: all 0.2s ease-in-out;
             &:hover {
-                background-color: $primary;
-                border-color: $white;
-                color: black;
+                background: rgba(199, 120, 221, 0.2);
                 border-radius: 20px;
             }
         }
@@ -125,14 +128,8 @@
                 top: 125px;
             }
         }
-        &__title {
-            font-size: 41px !important;
-        }
         &__info {
             width: 436px;
         }
-    }
-    .sub {
-        font-size: 23px !important;
     }
 }

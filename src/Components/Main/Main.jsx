@@ -12,10 +12,10 @@ const Main = () => {
         <main className="main">
             <div className="main__wrapper">
                 <div className="main__titles">
-                    <h1 className="main__title">Sergei Panteleenko - </h1>
-                    <h3 className="main__title">frontend developer</h3>
+                    <h1 className="main__title title-h1">Sergei Panteleenko - </h1>
+                    <h3 className="main__title title-h1">frontend developer</h3>
                     <div className="main__subtitle">
-                        <span className="sub">
+                        <span className="subtitle">
                             He crafts responsive websites
                             where
                             technologies
@@ -52,11 +52,11 @@ const Main = () => {
             </div>
                 <div className="main__quotation">
                     <div className="quotion__col">
-                        <span className="main__quotation-text">
+                        <span className="main__quotation-text subtitle">
                             With great power comes great electricity bill
                     </span>
                     </div>
-                    <div className="quotion__col">
+                    <div className="quotion__col subtitle">
                         <span className="main__quotation-text">
                         - Dr. Who
                     </span>

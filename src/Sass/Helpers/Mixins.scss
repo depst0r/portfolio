@@ -1,0 +1,13 @@
+
+@mixin title-responsive($mobile-size, $tablet-size, $desktop-size, $large-size) {
+    font-size: $mobile-size;
+    @media (min-width: 768px) {
+        font-size: $tablet-size;
+    }
+    @media (min-width: 1024px) {
+        font-size: $desktop-size;
+    }
+    @media (min-width: 1440px) {
+        font-size: $large-size;
+    }
+}
