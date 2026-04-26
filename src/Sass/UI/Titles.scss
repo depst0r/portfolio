@@ -12,6 +12,13 @@
     color: $white;
 }
 
+.title-h6 {
+    @include title-responsive (12px, 14px, 16px, 18px);
+    font-weight: 400;
+    font-size: 16px;
+    color: $gray;
+}
+
 .hash-symbol {
         @include title-responsive (18px, 23px, 27px, 35px);
         font-weight: 500;

@@ -31,7 +31,18 @@
 
     .card {
         &__lang {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
             border-bottom: 1px solid $gray;
+            padding: 10px;
+
+        }
+        &__title {
+            padding: 16px ;
+        }
+        &__sub {
+            padding: 0 16px 16px 16px;
         }
         &__buttons {
             border-top: 1px solid $gray;

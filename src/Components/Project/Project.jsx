@@ -17,11 +17,16 @@ import './Project.scss'
                 </div>
                 <div className="project__cards">
                     <div className="project__card">
-                        <div className="card__images"><img src={Test} alt="Test" /></div>
-                        <div className="card__lang">HTML SCSS REACT</div>
+                        <div className="card__images">
+                            <img src={Test} alt="Test" /></div>
+                        <div className="card__lang">
+                            <span className="title-h6">HTML</span>
+                            <span className="title-h6">SCSS</span>
+                            <span className="title-h6">REACT</span>
+                        </div>
                         <div className="card__info">
                             <div className="card__title">ChertNodes</div>
-                            <div className="card__sub">Minecraft servers hosting </div>
+                            <div className="card__sub title-h6">Minecraft servers hosting </div>
                             <div className="card__buttons">
                                 <button type='button'>{`Live <~>`}</button>
                                 <button type='button'>{`Cached >`}</button>
@@ -30,10 +35,14 @@ import './Project.scss'
                     </div>
                     <div className="project__card">
                         <div className="card__images"><img src={Test} alt="Test" /></div>
-                        <div className="card__lang">HTML SCSS REACT</div>
+                        <div className="card__lang">
+                            <span className="title-h6">HTML</span>
+                            <span className="title-h6">SCSS</span>
+                            <span className="title-h6">REACT</span>
+                        </div>
                         <div className="card__info">
                             <div className="card__title">ChertNodes</div>
-                            <div className="card__sub">Minecraft servers hosting </div>
+                            <div className="card__sub title-h6">Minecraft servers hosting </div>
                             <div className="card__buttons">
                                 <button type='button'>{`Live <~>`}</button>
                                 <button type='button'>{`Cached >`}</button>
@@ -42,10 +51,14 @@ import './Project.scss'
                     </div>
                     <div className="project__card">
                         <div className="card__images"><img src={Test} alt="Test" /></div>
-                        <div className="card__lang">HTML SCSS REACT</div>
+                        <div className="card__lang">
+                            <span className="title-h6">HTML</span>
+                            <span className="title-h6">SCSS</span>
+                            <span className="title-h6">REACT</span>
+                        </div>
                         <div className="card__info">
                             <div className="card__title">ChertNodes</div>
-                            <div className="card__sub">Minecraft servers hosting </div>
+                            <div className="card__sub title-h6">Minecraft servers hosting </div>
                             <div className="card__buttons">
                                 <button type='button'>{`Live <~>`}</button>
                                 <button type='button'>{`Cached >`}</button>
