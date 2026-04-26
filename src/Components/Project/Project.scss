@@ -24,6 +24,10 @@
     &__cards {
         display: flex;
         flex-wrap: wrap;
+        gap: 40px;
+        padding-top: 40px;
+        // justify-content: space-around;
+        // align-items: center;
     }
     &__card {
         border: 1px solid $gray;
@@ -39,13 +43,38 @@
 
         }
         &__title {
+            font-weight: 500;
+            font-size: 24px;
+            color: $white;
+
             padding: 16px ;
         }
         &__sub {
             padding: 0 16px 16px 16px;
         }
         &__buttons {
-            border-top: 1px solid $gray;
+            display: flex;
+            gap: 20px;
+            padding: 0 16px 16px 16px;
+            button {
+                border: 1px solid $primary;
+                color: $white;
+                padding: 8px 16px;
+                width: 109px;
+                height: 37px;
+                background: transparent;
+                font-weight: 500;
+                font-size: 16px;
+                color: $gray;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                    &:hover {
+                    background: rgba(199, 120, 221, 0.2);
+                    border-radius: 20px;
+                    color: $white;
+            }
+
+            }
         }
 }
 

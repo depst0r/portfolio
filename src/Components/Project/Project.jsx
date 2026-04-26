@@ -29,7 +29,7 @@ import './Project.scss'
                             <div className="card__sub title-h6">Minecraft servers hosting </div>
                             <div className="card__buttons">
                                 <button type='button'>{`Live <~>`}</button>
-                                <button type='button'>{`Cached >`}</button>
+                                <button type='button'>{`Github ⏎`}</button>
                                 </div>
                         </div>
                     </div>
