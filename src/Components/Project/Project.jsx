@@ -6,7 +6,7 @@ import './Project.scss'
 
 const Project = () => {
     const { repos, loading, error } = UseGitHubRepos()
-    console.log('Project=>', repos)
+    // console.log('Project=>', repos)
 
     return (
         <div className="project">
