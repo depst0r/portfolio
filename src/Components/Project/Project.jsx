@@ -1,21 +1,12 @@
-import { useState, useEffect } from 'react'
 
-import getRepos from '../../API/Github'
+import UseGitHubRepos from '../../UseRepos/UseGitHubRepos.js'
 import Test from '../../Images/Rectangle 22.jpg'
 import './Project.scss'
 
- const Project = () => {
 
-    const [repos, setRepos] = useState([])
-    const [loading, setLoading] = useState(false)
-    const [error, setError] = useState(null)
-
-    useEffect(() => {
-        getRepos().then(data => {
-            setRepos(data)
-        })
-    }, [])
-console.log('Project',repos)
+const Project = () => {
+    const { repos, loading, error } = UseGitHubRepos()
+console.log('Project=>', repos)
     return (
         <div className="project">
             <div className="project__wrapper">
@@ -79,7 +70,6 @@ console.log('Project',repos)
                                 </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
