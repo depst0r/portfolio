@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import FeaturedRepos from './config'
 import getRepos from '../API/Github'
 
 const UseGitHubRepos = () => {
@@ -9,14 +10,17 @@ const UseGitHubRepos = () => {
 
     useEffect(() => {
         getRepos().then(data => {
-            setRepos(data)
+            const filtered = data.filter(repo => 
+                FeaturedRepos.includes(repo.name)
+            )
+            setRepos(filtered)
             setLoading(false)
         })
         .catch(err => {
-            setError(err)
+            setError(err.message)
             setLoading(false)
         })
-    }, [])
+    }, [FeaturedRepos])
 
     return { repos, loading, error }
 

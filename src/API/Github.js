@@ -1,5 +1,5 @@
 
-const GITHUB_API_URL = 'https://api.github.com/users/depst0r/repos'
+const GITHUB_API_URL = 'https://api.github.com/users/depst0r/repos?per_page=100'
 
 const getRepos = async () => {
     const res = await fetch(GITHUB_API_URL)
