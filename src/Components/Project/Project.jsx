@@ -1,12 +1,13 @@
-
+import Card from '../Card/Card.jsx'
 import UseGitHubRepos from '../../UseRepos/UseGitHubRepos.js'
-import Test from '../../Images/Rectangle 22.jpg'
+
 import './Project.scss'
 
 
 const Project = () => {
     const { repos, loading, error } = UseGitHubRepos()
-console.log('Project=>', repos)
+    console.log('Project=>', repos)
+
     return (
         <div className="project">
             <div className="project__wrapper">
@@ -21,55 +22,7 @@ console.log('Project=>', repos)
                         </div>
                 </div>
                 <div className="project__cards">
-                    <div className="project__card">
-                        <div className="card__images">
-                            <img src={Test} alt="Test" /></div>
-                        <div className="card__lang">
-                            <span className="title-h6">HTML</span>
-                            <span className="title-h6">SCSS</span>
-                            <span className="title-h6">REACT</span>
-                        </div>
-                        <div className="card__info">
-                            <div className="card__title">ChertNodes</div>
-                            <div className="card__sub title-h6">Minecraft servers hosting </div>
-                            <div className="card__buttons">
-                                <button type='button'>{`Live <~>`}</button>
-                                <button type='button'>{`Github ⏎`}</button>
-                                </div>
-                        </div>
-                    </div>
-                    <div className="project__card">
-                        <div className="card__images"><img src={Test} alt="Test" /></div>
-                        <div className="card__lang">
-                            <span className="title-h6">HTML</span>
-                            <span className="title-h6">SCSS</span>
-                            <span className="title-h6">REACT</span>
-                        </div>
-                        <div className="card__info">
-                            <div className="card__title">ChertNodes</div>
-                            <div className="card__sub title-h6">Minecraft servers hosting </div>
-                            <div className="card__buttons">
-                                <button type='button'>{`Live <~>`}</button>
-                                <button type='button'>{`Cached >`}</button>
-                                </div>
-                        </div>
-                    </div>
-                    <div className="project__card">
-                        <div className="card__images"><img src={Test} alt="Test" /></div>
-                        <div className="card__lang">
-                            <span className="title-h6">HTML</span>
-                            <span className="title-h6">SCSS</span>
-                            <span className="title-h6">REACT</span>
-                        </div>
-                        <div className="card__info">
-                            <div className="card__title">ChertNodes</div>
-                            <div className="card__sub title-h6">Minecraft servers hosting </div>
-                            <div className="card__buttons">
-                                <button type='button'>{`Live <~>`}</button>
-                                <button type='button'>{`Cached >`}</button>
-                                </div>
-                        </div>
-                    </div>
+                {repos.map(repo => <Card repo={repo} key={repo.id} /> )}
                 </div>
             </div>
         </div>
