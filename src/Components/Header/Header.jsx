@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import HeaderDesktop from '../Header/HeaderDesktop.jsx';
-import HeaderMobile from '../Header/HeaderMobile.jsx';
+import {HeaderDesktop} from '../Header/HeaderDesktop.jsx';
+import {HeaderMobile} from '../Header/HeaderMobile.jsx';
 import Logo from '../../Images/Logo.png';
 import './Header.scss';
 
-const Header = ({isMobile}) => {
+export const Header = ({isMobile}) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -51,4 +51,3 @@ const Header = ({isMobile}) => {
     )
 }
 
-export default Header

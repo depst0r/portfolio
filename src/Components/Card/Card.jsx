@@ -1,6 +1,6 @@
 import './Card.scss';
 
-const Card = ({repo}) => {
+export const Card = ({repo}) => {
 
     return (
     <div className="project__card">
@@ -24,5 +24,3 @@ const Card = ({repo}) => {
     </div>
     )
 }
-
-export default Card

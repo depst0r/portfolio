@@ -1,5 +1,5 @@
 
-const HeaderDesktop = () => {
+export const HeaderDesktop = () => {
     return (
         <nav className="header__navigation">
             <ul className="header__menu">
@@ -19,5 +19,3 @@ const HeaderDesktop = () => {
             </nav>
     )
 }
-
-export default HeaderDesktop;

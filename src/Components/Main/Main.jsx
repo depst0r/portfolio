@@ -5,9 +5,9 @@ import UserLg from '../../Images/Main/Lg/user.png'
 import Dots from '../../Images/Figure/Dots.png';
 import Logo from '../../Images/Figure/Logo.png';
 
-import Form from '../Form/Form.jsx';
+// import Form from '../Form/Form.jsx';
 
-const Main = () => {
+export const Main = () => {
     return (
         <main className="main">
             <div className="main__wrapper">
@@ -65,5 +65,3 @@ const Main = () => {
         </main>
     )
 }
-
-export default Main

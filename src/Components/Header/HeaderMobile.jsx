@@ -1,7 +1,7 @@
 import {motion, AnimatePresence} from 'framer-motion';
 import {SocialLinks}from '../../Contacts/SocialLinks.js'
 
-const HeaderMobile = ({isMenuOpen, setIsMenuOpen}) => {
+export const HeaderMobile = ({isMenuOpen, setIsMenuOpen}) => {
 
 const {github, linkedIn, tg} = SocialLinks
 
@@ -55,5 +55,3 @@ console.log('Mobile',isMenuOpen)
         </AnimatePresence>
     )
 }
-
-export default HeaderMobile;

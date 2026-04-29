@@ -1,6 +1,6 @@
 import './ErrorMessage.scss'
 
-const ErrorMessage = ({error}) => {
+export const ErrorMessage = ({error}) => {
     return (
         <div className="error">
             <div className="error__wrapper">
@@ -9,5 +9,3 @@ const ErrorMessage = ({error}) => {
         </div>
     )
 }
-
-export default ErrorMessage

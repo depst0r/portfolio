@@ -1,13 +1,13 @@
-import Card from '../Card/Card.jsx'
+import {Card} from '../Card/Card.jsx'
 import Spiner from '../Spiner/Spiner.jsx'
-import ErrorMessage from '../ErrorMessage/ErrorMessage.jsx'
+import {ErrorMessage} from '../ErrorMessage/ErrorMessage.jsx'
 import UseGitHubRepos from '../../UseRepos/UseGitHubRepos.js'
 
 import './Project.scss'
 
 
 
-const Project = () => {
+export const Project = () => {
     const { repos, loading, error } = UseGitHubRepos()
 
     return (
@@ -37,5 +37,3 @@ const Project = () => {
         </div>
     )
 }
-
-export default Project

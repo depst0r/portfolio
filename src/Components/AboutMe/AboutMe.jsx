@@ -2,7 +2,7 @@ import './AboutMe.scss'
 
 import User from '../../Images/About/user.png'
 
-const AboutMe = ({isMobile}) => {
+export const AboutMe = ({isMobile}) => {
     return (
         <div className="about">
             <div className="about__header">
@@ -50,5 +50,3 @@ const AboutMe = ({isMobile}) => {
         </div>
     )
 }
-
-export default AboutMe
