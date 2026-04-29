@@ -1,7 +1,7 @@
 import './Card.scss';
 
 const Card = ({repo}) => {
-    console.log(repo.license?.name == null ? 'Loading' : repo.license?.name)
+
     return (
     <div className="project__card">
         <div className="card__images">

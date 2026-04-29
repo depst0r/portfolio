@@ -8,6 +8,7 @@ const UseGitHubRepos = () => {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
 
+
     useEffect(() => {
         getRepos().then(data => {
             const filtered = data.filter(repo => 
@@ -20,6 +21,7 @@ const UseGitHubRepos = () => {
             setError(err.message)
             setLoading(false)
         })
+
     }, [FeaturedRepos])
 
     return { repos, loading, error }
