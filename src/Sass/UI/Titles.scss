@@ -11,7 +11,13 @@
     font-weight: 500;
     color: $white;
 }
+.title-h5 {
+    @include title-responsive (12px, 14px, 16px, 18px);
+    font-weight: 400;
+    line-height: 163%;
+    color: $gray;
 
+}
 .title-h6 {
     @include title-responsive (12px, 14px, 16px, 18px);
     font-weight: 400;

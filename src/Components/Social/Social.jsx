@@ -2,11 +2,10 @@ import {SocialLinks}from '../../Contacts/SocialLinks.js'
 
 import './Social.scss';
 
-const Social = ({isMobile}) => {
+export const Social = ({isMobile}) => {
 
 const {github, linkedIn, tg} = SocialLinks
 
-console.log(github)
     
 
     return (
@@ -37,5 +36,3 @@ console.log(github)
         </section>
     )
 }
-
-export default Social

@@ -26,10 +26,12 @@
         flex-wrap: wrap;
         gap: 40px;
         padding-top: 40px;
+        justify-content: space-around;
     }
     &__card {
         max-width: 270px;
         border: 1px solid $gray;
+        background-color: rgba(30, 30, 30, 0.7 );
     }
 
    

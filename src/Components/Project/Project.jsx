@@ -1,12 +1,14 @@
-import Card from '../Card/Card.jsx'
+import {Card} from '../Card/Card.jsx'
+import Spiner from '../Spiner/Spiner.jsx'
+import {ErrorMessage} from '../ErrorMessage/ErrorMessage.jsx'
 import UseGitHubRepos from '../../UseRepos/UseGitHubRepos.js'
 
 import './Project.scss'
 
 
-const Project = () => {
+
+export const Project = () => {
     const { repos, loading, error } = UseGitHubRepos()
-    // console.log('Project=>', repos)
 
     return (
         <div className="project">
@@ -22,11 +24,16 @@ const Project = () => {
                         </div>
                 </div>
                 <div className="project__cards">
-                {repos.map(repo => <Card repo={repo} key={repo.id} /> )}
+                {loading ? (
+                    <Spiner/>
+                ) : 
+                    error ? (
+                        <ErrorMessage error={error}/>
+                ) : (
+                    repos.map(repo => <Card repo={repo} key={repo.id} /> )
+                )}
                 </div>
             </div>
         </div>
     )
 }
-
-export default Project
