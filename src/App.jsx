@@ -31,7 +31,7 @@ function App() {
       <Main/>
       <Social isMobile={isMobile}/>
       <Project/>
-      <Skils/>
+      <Skils isMobile={isMobile}/>
       <AboutMe isMobile={isMobile}/>
 
     </div>

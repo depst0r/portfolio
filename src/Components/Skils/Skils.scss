@@ -1,0 +1,18 @@
+.skils {
+    padding-top: 70px;
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 60%;
+    }
+    &__col {
+        &:nth-child(1) {
+            img {
+                border-bottom: 2px solid rgb(199, 120, 221);
+                width: 350px;
+            }
+        }
+    }
+}
