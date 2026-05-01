@@ -74,6 +74,10 @@ body {
         height: 2px;
         background: $primary;
     }
+    .separator {
+        margin: 0 5px 0 5px;
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width: 768px) {
