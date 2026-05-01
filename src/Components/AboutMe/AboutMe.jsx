@@ -42,6 +42,7 @@ export const AboutMe = ({isMobile}) => {
                         <Window className='window__about'>
                             <div className='window-code'>&gt; $ npm start</div>
                             <div className='window-code'>&gt; compiling...</div>
+                            <div className='window-code'>&gt; about-me</div>
                         </Window>     
                     <img src={User} alt="user" />
                 </div>

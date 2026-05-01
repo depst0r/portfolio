@@ -2,9 +2,11 @@
 import './Window.scss'
 
 const Window = ({children, className}) => {
-    <div className={`windod ${className || ''}`.trim()}>
+    return (
+    <div className={`window ${className || ''}`.trim()}>
         {children}
     </div>
+    )
 }
 
 export default Window

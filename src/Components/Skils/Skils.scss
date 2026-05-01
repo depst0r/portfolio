@@ -1,3 +1,5 @@
+@import '../../Sass/Helpers/Variables.scss';
+
 .skils {
     padding-top: 70px;
     &__title {
@@ -7,6 +9,13 @@
         gap: 20px;
         width: 60%;
     }
+    &__container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
     &__col {
         &:nth-child(1) {
             position: relative;
@@ -14,19 +23,26 @@
                 border-bottom: 2px solid rgb(199, 120, 221);
                 width: 350px;
             }
-            .window {
-                position: absolute;
-                color: rgb(87 214 165);
-                font-size: 12px;
-                line-height: 16px;
-                background-color: rgba(30, 30, 30, 0.7);
-                padding: 15px;
-                border: 1px solid rgb(199 120 221);
-                border-radius: 4px;
-                width: 148px;
-                height: 79px;
-                top: 57%;
         }
+        &:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
         }
     }
+        .window__skils {
+            position: absolute;
+            width: 148px;
+            height: 79px;
+            top: 57%;
+        }
+
+        .col__group {
+            &-name{
+                border: 2px solid $gray;
+            }
+            &-exp{
+                border: 2px solid $gray;
+            }
+        }
 }
