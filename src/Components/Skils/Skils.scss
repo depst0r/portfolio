@@ -26,7 +26,7 @@
         }
         &:nth-child(2) {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(1, minmax(200, 1fr));
             gap: 20px;
         }
     }
@@ -40,9 +40,24 @@
         .col__group {
             &-name{
                 border: 2px solid $gray;
+                padding: 10px;
             }
             &-exp{
                 border: 2px solid $gray;
+                border-top: transparent;
+                padding: 10px;
             }
         }
+}
+
+@media screen and (min-width: 640px) {
+    .skils__col:nth-child(2) {
+        grid-template-columns: repeat(2, minmax(200, 1fr))
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skils__col:nth-child(2) {
+        grid-template-columns: repeat(3, minmax(200, 1fr))
+    }
 }
