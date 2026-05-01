@@ -16,9 +16,16 @@ export const Skils = ({isMobile}) => {
             {!isMobile ? 
                 <div className="skils__col">
                     <img src={user} alt="user" />
+                    <div className='window'>
+                            <div className='window-code'>&gt; $ npm start</div>
+                            <div className='window-code'>&gt; compiling...</div>
+                            <div className='window-code'>&gt; skils</div>
+                        </div>    
                 </div> : null
             }
-                <div className="skils__col"></div>
+                <div className="skils__col">
+
+                </div>
             </div>
         </div>
     )
