@@ -7,6 +7,7 @@ import {Project} from './Components/Project/Project.jsx';
 import {AboutMe} from './Components/AboutMe/AboutMe.jsx';
 import './App.scss'
 import {Skils}  from './Components/Skils/Skils.jsx';
+import { Contacts } from './Components/Contacts/Contacts.jsx';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
       <Project/>
       <Skils isMobile={isMobile}/>
       <AboutMe isMobile={isMobile}/>
-
+    <Contacts/>
     </div>
   )
 }
