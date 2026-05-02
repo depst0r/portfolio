@@ -17,10 +17,12 @@
             font-size: 20px;
             color: #fff;
             font-weight: 700;
+            text-align: center;
         }
 
     }
     &__social {
+        display: flex;
         gap: 10px;
     }
     &__columns {
@@ -34,6 +36,12 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+        }
+        &:nth-child(3) {
+            display: grid;
+            justify-self: center;
+            grid-template-rows: auto;
+            gap: 20px;
         }
     }
 }
@@ -53,6 +61,8 @@
         &:nth-child(3) {
             grid-column-start: 3;
             grid-column-end: 3;
+            justify-self: end;
+            gap: 0;
         }
     }
     }
