@@ -1,6 +1,7 @@
 import './AboutMe.scss'
 
 import User from '../../Images/About/user.png'
+import Window from '../../Sass/UI/Window/Window.jsx'
 
 export const AboutMe = ({isMobile}) => {
     return (
@@ -38,10 +39,11 @@ export const AboutMe = ({isMobile}) => {
                 </div>
                 {!isMobile && 
                     <div className="about__person">
-                        <div className='window'>
+                        <Window className='window__about'>
                             <div className='window-code'>&gt; $ npm start</div>
                             <div className='window-code'>&gt; compiling...</div>
-                        </div>     
+                            <div className='window-code'>&gt; about-me</div>
+                        </Window>     
                     <img src={User} alt="user" />
                 </div>
                 }

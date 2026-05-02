@@ -1,0 +1,71 @@
+@import '../../Sass/Helpers/Variables.scss';
+
+.skils {
+    padding-top: 70px;
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 60%;
+    }
+    &__container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    &__col {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        &:nth-child(1) {
+            position: relative;
+            img {
+                border-bottom: 2px solid rgb(199, 120, 221);
+                width: 350px;
+            }
+        }
+        &:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 20px;
+        }
+    }
+        .window__skils {
+            position: absolute;
+            width: 148px;
+            height: 79px;
+            top: 57%;
+        }
+
+        .col__group {
+                min-width: 0;
+                width: 100%;
+                gap: 10px;
+            &-name{
+                border: 2px solid $gray;
+                padding: 10px;
+            }
+            &-exp{
+                display: flex;
+                flex-wrap: wrap;
+                border: 2px solid $gray;
+                border-top: transparent;
+                padding: 10px;
+            }
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .skils__col:nth-child(2) {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skils__col:nth-child(2) {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+}
