@@ -1,12 +1,13 @@
 import './Form.scss';
 
-const Form = () => {
+export const Form = () => {
     return (
-        <form action="#" method="post">
-            <input type="text" name="name" id="name" />
-            <input type="email" name="email" id="email" />
+        <form action="#" method="post" className='form'>
+            <input type="text" name="name" className='form__name' />
+            <input type="email" name="email" className='form__email' />
+            <input type="text" name="title" className='form__title' />
+            <textarea name="text" className='form__text'></textarea>
+            <button type="submit" className='form__submit'></button>
         </form>
     )
 }
-
-export default Form
