@@ -1,0 +1,59 @@
+@import '../../Sass/Helpers/Variables';
+
+.footer {
+    border-top: 2px solid $gray;
+    margin-top: 55px;
+    padding-top: 10px;
+    &__logo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        img {
+            width: 15px;
+            height: 15px;
+        }
+        &-name {
+            font-size: 20px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+    }
+    &__social {
+        gap: 10px;
+    }
+    &__columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    &__column {
+        &:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__columns {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    &__column {
+        &:nth-child(2) {
+            grid-column-start: 2;
+            grid-row-end: 3;
+            align-self: end;
+        }
+        &:nth-child(3) {
+            grid-column-start: 3;
+            grid-column-end: 3;
+        }
+    }
+    }
+}

@@ -1,13 +1,16 @@
 import { useState, useEffect } from 'react';
+
 import {Header}  from './Components/Header/Header.jsx';
 import {Main} from './Components/Main/Main.jsx';
 // import {Form} from './Components/Form/Form.jsx';
 import {Social} from './Components/Social/Social.jsx';
 import {Project} from './Components/Project/Project.jsx';
 import {AboutMe} from './Components/AboutMe/AboutMe.jsx';
-import './App.scss'
 import {Skils}  from './Components/Skils/Skils.jsx';
 import { Contacts } from './Components/Contacts/Contacts.jsx';
+import { Footer } from './Components/Footer/Footer.jsx';
+
+import './App.scss'
 
 function App() {
 
@@ -34,7 +37,8 @@ function App() {
       <Project/>
       <Skils isMobile={isMobile}/>
       <AboutMe isMobile={isMobile}/>
-    <Contacts/>
+      <Contacts/>
+      <Footer/>
     </div>
   )
 }
