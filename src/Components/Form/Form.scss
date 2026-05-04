@@ -1,3 +1,54 @@
+@import '../../Sass/Helpers/Variables.scss';
+
 .form {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 400px));
+    gap: 24px;
+    &__name {
+        grid-column: span 1 / span 1;
+    }
+    &__email {
+        grid-column: span 1 / span 1;
+    }
+    &__title {
+        grid-column: span 2 / span 2;
+    }
+    &__text {
+        grid-column: span 2 / span 2;
+    }
+    &__submit {
+        grid-column: span 2 / span 2;
+    }
+    input, 
+    textarea
+        {
+            background-color: transparent;
+            color: rgb(255 255 255);
+            border: 1px solid rgb(156 163 175);
+            font-size: 18px;
+            padding: 8px;
+        }
+
+        &-bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(30, 30, 30, 0.7);
+        }
+        &__submit {
+            border: 1px solid $primary;
+            padding: 8px 16px;
+            width: 148px;
+            height: 37px;
+            background: transparent;
+            font-weight: 500;
+            font-size: 16px;
+            color: $white;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background: rgba(199, 120, 221, 0.2);
+                border-radius: 20px;
+            }
+        }
 }
