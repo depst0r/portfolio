@@ -1,16 +1,71 @@
-# React + Vite
+# Портфолио фронтенд-разработчика
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Моё портфолио — это не просто набор проектов, а демонстрация подхода к разработке: чистый код, внимание к деталям и современные технологии.
 
-Currently, two official plugins are available:
+[![GitHub stars](https://img.shields.io/github/stars/depst0r/portfolio?style=social)](https://github.com/depst0r/portfolio/stargazers)
+[![React](https://img.shields.io/badge/React-18.2-61dafb?logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-4.0-646cff?logo=vite)](https://vitejs.dev/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📱 Живая демонстрация
 
-## React Compiler
+**[👉 Смотреть портфолио](https://depst0r.github.io/portfolio-react)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Технологии
 
-## Expanding the ESLint configuration
+| Категория | Технологии |
+|-----------|-----------|
+| **Core** | React 18, Vite |
+| **Стили** | SCSS, CSS Modules, Framer Motion |
+| **API** | GitHub REST API |
+| **Качество** | ESLint, Prettier |
+| **Деплой** | GitHub Pages |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## ✨ Особенности
+
+- **Адаптивный дизайн** — корректно отображается на всех устройствах
+- **Плавные анимации** — с помощью Framer Motion
+- **Динамические проекты** — данные подтягиваются с GitHub API
+- **Оптимизация** — ленивая загрузка компонентов, кэширование запросов
+- **Доступность** — семантическая вёрстка, поддержка клавиатуры
+
+## 🚀 Быстрый старт
+
+```bash
+# Клонирование репозитория
+git clone https://github.com/depst0r/portfolio.git
+cd portfolio
+git checkout react-version
+
+# Установка зависимостей
+npm install
+
+# Запуск в режиме разработки
+npm run dev
+
+# Сборка для продакшена
+npm run build
+
+# Деплой на GitHub Pages
+npm run deploy
+
+
+---
+
+## 🎨 Дополнительные идеи
+
+1. **Добавьте GIF/скриншот** — вставьте запись экрана или несколько скриншотов сайта
+2. **Бейджи с тегами** — показывают актуальность (React, Vite, SCSS, Framer Motion) — примеры в коде выше
+3. **Раздел "Почему я"** — 3-4 абзаца о вашем подходе к работе (чистый код, тестирование, производительность)
+4. **Интерактивная таблица проектов** — с сортировкой по технологиям
+
+---
+
+## ⚠️ Важно
+
+**Перед деплоем не забудьте проверить**
+- Живые ссылки на проекты
+- Адрес портфолио (`https://depst0r.github.io/portfolio-react`)
+- Рабочие контакты
+
