@@ -3,6 +3,11 @@ import './Form.scss';
 export const Form = () => {
     return (
         <div className="form-bg">
+            <div className="form__buttons">
+                <button className="button_close"></button>
+                <button className="button_close"></button>
+                <button className="button_close"></button>
+                </div>
             <form action="#" method="post" className='form'>
                 <input type="text" name="name" className='form__name'  placeholder='Name'/>
                 <input type="email" name="email" className='form__email'  placeholder='Email'/>
