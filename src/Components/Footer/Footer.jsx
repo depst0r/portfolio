@@ -4,8 +4,10 @@ import logo from '../../Images/Logo.png'
 
 import {SocialLinks}from '../../Contacts/SocialLinks.js'
 
-
 export const Footer = () => {
+
+    const yaer = new Date().getFullYear()
+
     const {github, linkedIn, tg} = SocialLinks
     return (
         <footer className="footer">
@@ -20,7 +22,7 @@ export const Footer = () => {
                         <span className='title-h5'>Web front-end developer</span>
                     </div>
                     <div className="footer__column">
-                        <span className='title-h5'>© Copyright 2025. Made by depstor</span>
+                        <span className='title-h5'>© Copyright {yaer}. Made by depstor</span>
                     </div>
                     <div className="footer__column">
                         <span className="footer__logo-name">Media</span>

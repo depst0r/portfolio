@@ -1,14 +1,23 @@
 
-import './Main.scss'
+import { useState } from "react";
+
+import { Form } from '../Form/Form.jsx';
+
+import './Main.scss';
+
 import User from '../../Images/Main/user.png';
 import UserLg from '../../Images/Main/Lg/user.png'
 import Dots from '../../Images/Figure/Dots.png';
 import Logo from '../../Images/Figure/Logo.png';
 
-// import Form from '../Form/Form.jsx';
 
 export const Main = () => {
+
+    const [isVisible, setIsVisible] = useState(false)
+
     return (
+        <>
+        <Form isOpen = {isVisible}/>
         <main className="main">
             <div className="main__wrapper">
                 <div className="main__titles">
@@ -22,7 +31,13 @@ export const Main = () => {
                             meet creativity
                         </span>
                     </div>
-                    <button type="button" className='open-form'>Contact me !!</button>
+                    <button 
+                    type="button" 
+                    className='open-form'
+                    onClick={() => setIsVisible(!isVisible)}
+                    >
+                        Contact me !!
+                        </button>
                 </div>
                 <div className="main__images">
                     <img src={Dots} alt="User" className="main__images-dots" />
@@ -63,5 +78,7 @@ export const Main = () => {
                     </div>
                 </div>
         </main>
+        </>
     )
+    
 }

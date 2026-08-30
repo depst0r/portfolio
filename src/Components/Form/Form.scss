@@ -26,7 +26,7 @@
         }
 
         &-bg {
-            position: relative;
+            position: absolute;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -77,5 +77,13 @@
             justify-content: end;
             gap: 10px;
             width: 100%;
-        }    
+        }  
+        
+    &-close {
+        display: none;
+    }
+
+    &-opne {
+        display: block;
+    }
 }
