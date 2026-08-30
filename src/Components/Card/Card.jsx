@@ -1,9 +1,15 @@
+import { motion } from 'motion/react';
+
 import './Card.scss';
 
 export const Card = ({repo}) => {
 
     return (
-    <div className="project__card">
+    <motion.div 
+    className="project__card"
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+    >
         <div className="card__images">
             {/* <img src='https://camo.githubusercontent.com/660e8839e806a7a23f61b155be2e078a1cbd67f33c65b38994f8318cbd9e50f6/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7167515567674143335066763638377150432f67697068792e676966' alt={repo.full_name} /> */}
         <svg viewBox="0 0 16 16" fill="currentColor" width='150px'>
@@ -21,6 +27,6 @@ export const Card = ({repo}) => {
                 <a href={repo.html_url} type='button' target='blank'>Github</a>
                 </div>
         </div>
-    </div>
+    </motion.div>
     )
 }
