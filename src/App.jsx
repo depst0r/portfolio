@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+
 import {Header}  from './Components/Header/Header.jsx';
 import {Main} from './Components/Main/Main.jsx';
 import {Social} from './Components/Social/Social.jsx';
@@ -9,7 +10,10 @@ import {Skils}  from './Components/Skils/Skils.jsx';
 import { Contacts } from './Components/Contacts/Contacts.jsx';
 import { Footer } from './Components/Footer/Footer.jsx';
 
+import {Works} from './Components/Pages/Works.jsx';
+
 import './App.scss'
+import { HomePage } from './Components/Pages/Home.jsx';
 
 function App() {
 
@@ -31,12 +35,7 @@ function App() {
   return (
     <div className='container'>
       <Header isMobile={isMobile} />
-      <Main/>
-      <Social isMobile={isMobile}/>
-      <Project/>
-      <Skils isMobile={isMobile}/>
-      <AboutMe isMobile={isMobile}/>
-      <Contacts/>
+      <HomePage isMobile={isMobile}/>
       <Footer/>
     </div>
   )
