@@ -1,4 +1,6 @@
 import {motion, AnimatePresence} from 'framer-motion';
+import { Link } from 'react-router-dom';
+
 import {SocialLinks}from '../../Contacts/SocialLinks.js'
 
 export const HeaderMobile = ({isMenuOpen, setIsMenuOpen}) => {
@@ -17,12 +19,16 @@ console.log('Mobile',isMenuOpen)
                 >
                     <nav className="header__navigation-mobile">
                         <ul className="header__navigation-menu">
+                            <Link to='/'>
                             <li className="header__navigation-links">
-                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Home</a>
+                                <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Home</span>
                                 </li>
+                            </Link>
+                            <Link to='works'>
                             <li className="header__links">
-                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Works</a>
+                                <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Works</span>
                                 </li>
+                            </Link>
                             <li className="header__links">
                                 <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>About-me</a>
                                 </li>

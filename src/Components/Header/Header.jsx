@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
 import {HeaderDesktop} from '../Header/HeaderDesktop.jsx';
 import {HeaderMobile} from '../Header/HeaderMobile.jsx';
 import Logo from '../../Images/Logo.png';
@@ -28,8 +30,12 @@ export const Header = ({isMobile}) => {
             <div className="header__columns">
             <div className="header__logo">
             <div className="header__logo-col">
-                <img src={Logo} alt="Logo" />
-                <h6 className="header__logo-name">depstor</h6>
+                <Link to='/'>
+                    <img src={Logo} alt="Logo" />
+                </Link>
+                <Link to='/'>
+                    <h6 className="header__logo-name">depstor</h6>
+                </Link>
             </div>
             {/* <div className="header__logo-col"></div> */}
                 {isMobile ?  
