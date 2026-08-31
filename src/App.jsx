@@ -1,19 +1,12 @@
 import { useState, useEffect } from 'react';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import {Header}  from './Components/Header/Header.jsx';
-import {Main} from './Components/Main/Main.jsx';
-import {Social} from './Components/Social/Social.jsx';
-import {Project} from './Components/Project/Project.jsx';
-import {AboutMe} from './Components/AboutMe/AboutMe.jsx';
-import {Skils}  from './Components/Skils/Skils.jsx';
-import { Contacts } from './Components/Contacts/Contacts.jsx';
 import { Footer } from './Components/Footer/Footer.jsx';
-
 import {Works} from './Components/Pages/Works.jsx';
+import { HomePage } from './Components/Pages/Home.jsx';
 
 import './App.scss'
-import { HomePage } from './Components/Pages/Home.jsx';
 
 function App() {
 
@@ -33,11 +26,16 @@ function App() {
     }, [])
 
   return (
-    <div className='container'>
-      <Header isMobile={isMobile} />
-      <HomePage isMobile={isMobile}/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className='container'>
+        <Header isMobile={isMobile} />
+          <Routes>
+            <Route path='/' element={ <HomePage isMobile={isMobile}/>} />
+            <Route path='/works' element={<Works/>} />
+          </Routes>
+        <Footer/>
+      </div>
+    </Router>
   )
 }
 
