@@ -1,0 +1,12 @@
+@import '../../Sass/Helpers/Variables.scss';
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0 50px 0;
+    &__col {
+        display: flex;
+        align-items: center;
+    }
+}

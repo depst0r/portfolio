@@ -1,21 +1,33 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 export const HeaderDesktop = () => {
     return (
         <nav className="header__navigation">
             <ul className="header__menu">
-                <Link to='/'>
                     <li className="header__links">
-                        <span className="header__link"><span className="hash">#</span>Home</span>
+                        <NavLink  
+                            className="header__link"
+                            end
+                            style={({isActive}) => ({color: isActive ? '#fff' : '#abb2bf'})}
+                            to='/'
+                        >
+                            <span className="hash">#</span>
+                                Home
+                            </NavLink>
                     </li>
-                </Link>
-                <Link to='works'>
-                                <li className="header__links">
-                    <span  className="header__link"><span className="hash">#</span>Works</span>
+                
+                    <li className="header__links">
+                    <NavLink 
+                        className="header__link"
+                        end
+                        to='works'
+                        style={({isActive}) => ({color: isActive ? '#fff' : '#abb2bf'})}
+                    >
+                        <span className="hash">#</span>Works
+                    </NavLink>
                     </li>
-                </Link>
-
+                
                 <li className="header__links">
                     <span  className="header__link"><span className="hash">#</span>About-me</span>
                     </li>
