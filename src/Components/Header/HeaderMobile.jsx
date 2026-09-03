@@ -1,5 +1,5 @@
 import {motion, AnimatePresence} from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import {SocialLinks}from '../../Contacts/SocialLinks.js'
 
@@ -19,19 +19,21 @@ console.log('Mobile',isMenuOpen)
                 >
                     <nav className="header__navigation-mobile">
                         <ul className="header__navigation-menu">
-                            <Link to='/'>
+                            <NavLink to='/'>
                             <li className="header__navigation-links">
                                 <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Home</span>
                                 </li>
-                            </Link>
-                            <Link to='works'>
+                            </NavLink>
+                            <NavLink to='works'>
                             <li className="header__links">
                                 <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Works</span>
                                 </li>
-                            </Link>
+                            </NavLink>
+                            <NavLink to='about-me'>
                             <li className="header__links">
-                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>About-me</a>
+                                <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>About-me</span>
                                 </li>
+                            </NavLink>
                             <li className="header__links">
                                 <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Contacts</a>
                         </li>
