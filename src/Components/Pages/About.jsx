@@ -1,6 +1,8 @@
 import { TitlePage } from "../TilePage/TitlePage"
+import { Skils } from "../Skils/Skils.jsx"
 import User from '../../Images/About/user.png'
 import Window from '../../Sass/UI/Window/Window.jsx'
+
 import '../AboutMe/AboutMe.scss'
 import './Pages.scss'
 
@@ -8,7 +10,7 @@ export const About = ({isMobile}) => {
     return (
         <>
         <TitlePage title={'about-me'} subtitle={'Who am i?'}/>
-                    <div className="about__container">
+            <div className="about__container">
                 <div className="about__info">
                     <p className="title-h5">Hi, I'm Sergey — frontend developer with a focus on clean code and user experience.</p>
                     <p className="title-h5">
@@ -41,6 +43,7 @@ export const About = ({isMobile}) => {
                 }
                 
             </div>
+            <Skils isMobile={isMobile}/>
         </>
     )
 }
