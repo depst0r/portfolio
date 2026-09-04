@@ -37,7 +37,12 @@ export const HeaderDesktop = () => {
                         <span className="hash">#</span>About-me</NavLink>
                     </li>
                 <li className="header__links">
-                    <span  className="header__link"><span className="hash">#</span>Contacts</span>
+                    <NavLink 
+                    end 
+                    to='contact'  
+                    style={({isActive}) => ({color: isActive ? '#fff' : '#abb2bf'})}
+                    className="header__link">
+                        <span className="hash">#</span>Contacts</NavLink>
             </li>
         </ul>
             </nav>

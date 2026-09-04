@@ -24,19 +24,21 @@ console.log('Mobile',isMenuOpen)
                                 <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Home</span>
                                 </li>
                             </NavLink>
-                            <NavLink to='works'>
+                            <NavLink to='/works'>
                             <li className="header__links">
                                 <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Works</span>
                                 </li>
                             </NavLink>
-                            <NavLink to='about-me'>
+                            <NavLink to='/about-me'>
                             <li className="header__links">
                                 <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>About-me</span>
                                 </li>
                             </NavLink>
+                            <NavLink to='/contact'>
                             <li className="header__links">
-                                <a href="#" className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Contacts</a>
+                                <span className="header__navigation-link" onClick={() => setIsMenuOpen(false)}><span className="hash">#</span>Contacts</span>
                         </li>
+                        </NavLink>
                         <li>
                     <div className="header__links-socials">
                         <a className="icon__link" href={github} target="blank" className="header__navigation-link">

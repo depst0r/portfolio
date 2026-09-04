@@ -1,5 +1,7 @@
 import { TitlePage } from "../TilePage/TitlePage"
 import { Skils } from "../Skils/Skils.jsx"
+import { Social } from '../Social/Social.jsx';
+
 import User from '../../Images/About/user.png'
 import Window from '../../Sass/UI/Window/Window.jsx'
 
@@ -9,6 +11,7 @@ import './Pages.scss'
 export const About = ({isMobile}) => {
     return (
         <>
+        <Social/>
         <TitlePage title={'about-me'} subtitle={'Who am i?'}/>
             <div className="about__container">
                 <div className="about__info">
