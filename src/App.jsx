@@ -6,6 +6,7 @@ import { Footer } from './Components/Footer/Footer.jsx';
 import { HomePage, Works, About, Contacts } from './Components/Pages/index.js';
 
 import './App.scss'
+import { RepoPage } from './Components/Pages/RepoPage.jsx';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <Router>
+      <RepoPage/>
       <div className='container'>
         <Header isMobile={isMobile} />
           <Routes>
