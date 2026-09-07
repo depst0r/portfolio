@@ -45,7 +45,7 @@ export const Works = () => {
         className="project__cards">
             <Social/>
                 {repos.map(rep => (
-                    <Link to={`/works:${rep.name}`}>
+                    <Link to={`/works/${rep.id}`}>
                         <motion.div className='project__card' key={rep.id}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.8 }}

@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import {Header}  from './Components/Header/Header.jsx';
 import { Footer } from './Components/Footer/Footer.jsx';
-import { HomePage, Works, About, Contacts } from './Components/Pages/index.js';
+import { HomePage, Works, About, Contacts, RepoPage  } from './Components/Pages/index.js';
 
 import './App.scss'
-import { RepoPage } from './Components/Pages/RepoPage.jsx';
+
 
 function App() {
 
@@ -27,12 +27,12 @@ function App() {
 
   return (
     <Router>
-      <RepoPage/>
       <div className='container'>
         <Header isMobile={isMobile} />
           <Routes>
             <Route path='/' element={ <HomePage isMobile={isMobile}/>} />
             <Route path='/works' element={<Works/>} />
+            <Route path='/works/:repoId' element={<RepoPage/>} />
             <Route path='/about-me' element={<About isMobile={isMobile}/>}/>
             <Route path='/contact' element={<Contacts/>}/>
           </Routes>
