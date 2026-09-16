@@ -11,6 +11,20 @@ import getRepos from '../../API/Github'
 
 import '../Card/Card.scss'
 import '../Project/Project.scss'
+import './RepoPage.scss'
+
+export const Years = ({years}) => {
+       return( 
+        <div className="btn__wrapper">
+            {years.map(y => {
+                return (
+                <button className='btn__years' key={y}>{y}</button>  
+                )
+            }
+    )
+    }
+    </div>)
+}
 
 export const Works = () => {
 
@@ -24,7 +38,8 @@ export const Works = () => {
         const fetchData = async () => {
             try {
                 const data = await getRepos();
-                setRepos(data)
+                const shuffled = [...data].sort(() => Math.random())
+                setRepos(shuffled)
                 setLoading(false)
             } catch (err) {
                 setError(err.message)
@@ -34,6 +49,12 @@ export const Works = () => {
         fetchData()
     }, [])
 
+    const years = [...new Set(
+        repos.map(y => new Date(y.pushed_at)
+        .getFullYear()))]
+        .sort((a, b) => b - a)
+
+
     if (loading) return <Spiner/>
     if (error) return <ErrorMessage/>
 
@@ -41,12 +62,13 @@ export const Works = () => {
        return (
         <>
             <TitlePage title={'projects'} subtitle={'List of my projects'}/>
+            <Years years={years}/>
         <div 
         className="project__cards">
             <Social/>
                 {repos.map(rep => (
-                    <Link to={`/works/${rep.id}`}>
-                        <motion.div className='project__card' key={rep.id}
+                    <Link to={`/works/${rep.id}`} key={rep.id}>
+                        <motion.div className='project__card'
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.8 }}
                         >   

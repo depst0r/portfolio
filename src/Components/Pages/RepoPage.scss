@@ -169,3 +169,23 @@
         }
     }
 }
+
+.btn{
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__years {
+        border: 1px solid #c778dd;
+        padding: 8px 16px;
+        width: 148px;
+        height: 37px;
+        background: transparent;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+}

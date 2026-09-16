@@ -1,3 +1,5 @@
+import * as motion from "motion/react-client";
+
 import { TitlePage } from "../TilePage/TitlePage"
 import { Skils } from "../Skils/Skils.jsx"
 import { Social } from '../Social/Social.jsx';
@@ -12,6 +14,12 @@ export const About = ({isMobile}) => {
     return (
         <>
         <Social/>
+        <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+        >
         <TitlePage title={'about-me'} subtitle={'Who am i?'}/>
             <div className="about__container">
                 <div className="about__info">
@@ -46,7 +54,15 @@ export const About = ({isMobile}) => {
                 }
                 
             </div>
+        </motion.div>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+            >
             <Skils isMobile={isMobile}/>
+            </motion.div>
         </>
     )
 }
