@@ -13,12 +13,17 @@ import '../Card/Card.scss'
 import '../Project/Project.scss'
 import './RepoPage.scss'
 
-export const Years = ({years}) => {
+export const Years = ({years, setSelectedYear}) => {
+
        return( 
         <div className="btn__wrapper">
+            <button onClick={() => setSelectedYear('all')}  className='btn__years'>All</button> 
             {years.map(y => {
                 return (
-                <button className='btn__years' key={y}>{y}</button>  
+                <button 
+                onClick={() => setSelectedYear(y)}  
+                className='btn__years' 
+                key={y}>{y}</button>  
                 )
             }
     )
@@ -31,6 +36,7 @@ export const Works = () => {
     const [repos, setRepos] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
+    const [selectedYear, setSelectedYear] = useState('all')
 
 
 
@@ -54,19 +60,23 @@ export const Works = () => {
         .getFullYear()))]
         .sort((a, b) => b - a)
 
+        const filteredRepos = selectedYear === 'all'
+            ? repos
+            : repos.filter(repo => 
+                new Date(repo.pushed_at).getFullYear() === selectedYear
+            )
 
     if (loading) return <Spiner/>
-    if (error) return <ErrorMessage/>
+    if (error) return <ErrorMessage/>    
 
-   
        return (
         <>
             <TitlePage title={'projects'} subtitle={'List of my projects'}/>
-            <Years years={years}/>
+            <Years years={years} setSelectedYear={setSelectedYear}/>
         <div 
         className="project__cards">
             <Social/>
-                {repos.map(rep => (
+                {filteredRepos.map(rep => (
                     <Link to={`/works/${rep.id}`} key={rep.id}>
                         <motion.div className='project__card'
                             whileHover={{ scale: 1.1 }}
