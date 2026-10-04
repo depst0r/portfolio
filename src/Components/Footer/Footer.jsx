@@ -16,7 +16,7 @@ export const Footer = () => {
                     <div className="footer__column">
                         <div className="footer__logo">
                             <img src={logo} alt="logo" />
-                            <h6 class="footer__logo-name">depstor</h6>
+                            <h6 className="footer__logo-name">depstor</h6>
                             <span className="title-h5">depstor.work@gmail.com</span>
                         </div>
                         <span className='title-h5'>Web front-end developer</span>

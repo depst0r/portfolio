@@ -11,11 +11,11 @@ export const Contacts = () => {
             <div className="contacts__header">
                 <div className="contacts__title">
                     <span className="hash-symbol">#</span>
-                    <span class="title-h4">contacts</span>
+                    <span className="title-h4">contacts</span>
                     <div className="line"></div>
                 </div>
                 <div className="contacts__link">
-                    <a href="#" class="link">{'View all ~~>'}</a>
+                    <a href="#" className="link">{'View all ~~>'}</a>
                 </div>
             </div>
             <div className="contacts__columns">

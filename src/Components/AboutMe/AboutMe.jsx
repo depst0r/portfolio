@@ -9,11 +9,11 @@ export const AboutMe = ({isMobile}) => {
             <div className="about__header">
                 <div className="about__title">
                     <span className="hash-symbol">#</span>
-                    <span class="title-h4">about-me</span>
+                    <span className="title-h4">about-me</span>
                     <div className="line"></div>
                 </div>
                 <div className="about__link">
-                    <a href="#" class="link">{'View all ~~>'}</a>
+                    <a href="#" className="link">{'View all ~~>'}</a>
                 </div>
             </div>
             <div className="about__container">

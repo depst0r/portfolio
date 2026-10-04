@@ -17,7 +17,7 @@ export const Main = () => {
 
     return (
         <>
-        <Form isOpen = {isVisible}/>
+        <Form isOpen = {isVisible} isClose={setIsVisible}/>
         <main className="main">
             <div className="main__wrapper">
                 <div className="main__titles">

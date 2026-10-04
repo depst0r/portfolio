@@ -1,15 +1,14 @@
+import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 import './Form.scss';
 
-export const Form = ({isOpen}) => {
+export const Form = ({isOpen, isClose}) => {
 
-    console.log(isOpen)
 
     return (
         <AnimatePresence>
             { isOpen && (
-
                 <motion.div 
                 className="form-bg"
                     initial={{ opacity: 0, scale: 0 }}
@@ -17,9 +16,9 @@ export const Form = ({isOpen}) => {
                     exit={{ opacity: 0, scale: 0 }}
                 >
                     <div className="form__buttons">
-                        <button className="button_close"></button>
-                        <button className="button_close"></button>
-                        <button className="button_close"></button>
+                        <button onClick={() => isClose(!isOpen)} className="button_close"></button>
+                        <button onClick={() => isClose(!isOpen)} className="button_close"></button>
+                        <button onClick={() => isClose(!isOpen)} className="button_close"></button>
                         </div>
                     <form action="#" method="post" className='form'>
                         <input type="text" name="name" className='form__name'  placeholder='Name'/>
@@ -32,6 +31,5 @@ export const Form = ({isOpen}) => {
             ) 
             }
         </AnimatePresence>
-
     )
 }
