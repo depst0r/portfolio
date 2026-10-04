@@ -1,8 +1,8 @@
 const FeaturedRepos = [
+    'ai-code-explainer',
+    'ai-agent-mobile',
     'portfolio',
     'crypto-dashboard',
-    'Fake-Store-API',
-    'typescript-todo-app'
 ]
 
 // const FeaturedRepos = [
