@@ -1,6 +1,7 @@
 const FeaturedRepos = [
     'ai-code-explainer',
     'ai-agent-mobile',
+    'ai-code-explainer',
     'portfolio',
     'crypto-dashboard',
 ]
